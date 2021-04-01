@@ -1,0 +1,1 @@
+{"ast":null,"code":"var link = {\n  profile: {\n    home: '/'\n  }\n};\nexport default link;","map":null,"metadata":{},"sourceType":"module"}

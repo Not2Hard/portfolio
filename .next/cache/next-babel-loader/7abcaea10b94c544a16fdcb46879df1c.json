@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './BannerNav';","map":{"version":3,"sources":["/Users/natalia/Development/portfolio/components/BannerNav/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAwB,aAAxB","sourcesContent":["export { default } from './BannerNav';\n"]},"metadata":{},"sourceType":"module"}

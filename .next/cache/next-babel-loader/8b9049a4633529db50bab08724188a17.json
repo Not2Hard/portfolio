@@ -1,0 +1,1 @@
+{"ast":null,"code":"const menu = ['home', 'about', 'services', 'my-work', 'testimonials', 'blog', 'contact'];\nexport default menu;","map":null,"metadata":{},"sourceType":"module"}

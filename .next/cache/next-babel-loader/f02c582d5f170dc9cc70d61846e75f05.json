@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from './SideNavigation';","map":{"version":3,"sources":["/Users/natalia/Development/portfolio/components/SideNavigation/index.js"],"names":["default"],"mappings":"AAAA,SAASA,OAAT,QAAwB,kBAAxB","sourcesContent":["export { default } from './SideNavigation';\n"]},"metadata":{},"sourceType":"module"}
