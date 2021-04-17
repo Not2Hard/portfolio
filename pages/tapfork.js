@@ -13,6 +13,7 @@ import { withTranslation } from '../i18n';
 import TapFork from '../components/Projectsux/Tf.js'
 import Container from '@material-ui/core/Container';
 import tfmock from '../public/images/profile/tf-images/tapandfork.jpg';
+import tfhead from '../public/images/profile/tf_header.jpg'
 
 const sectionMargin = margin => (margin * 10);
 const useStyles = makeStyles(theme => ({
@@ -29,7 +30,7 @@ const useStyles = makeStyles(theme => ({
     paddingTop: sectionMargin(theme.spacing())
   },
   containerWrap: {
-    marginTop: theme.spacing(10),
+    marginTop: theme.spacing(4),
     padding: theme.spacing(4),
     '& > section': {
       position: 'relative'
@@ -59,6 +60,7 @@ function TFapp(props) {
           onToggleDir={onToggleDir}
           invert
         />
+        <div className={classes.headderImg} ><img src={tfhead} align="center" width="100%"  alt="App on mobile" /> </div>
         <main className={classes.containerWrap}>
           <section className={clsx(classes.spaceTop, classes.spaceBottom)}>
             <Typography variant="h2" align="center" gutterBottom>

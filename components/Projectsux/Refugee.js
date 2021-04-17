@@ -42,25 +42,25 @@ const Refugee = () => {
                 Project Description:
               </Typography>
               <Typography className={text.paragraph}>
-                This startup company was started as the owner saw a need to help refugees integrate into the community, as so many are very isolated. After working with so many refugees the owner realised that most people had a real passion for food so this series of classes was born. They need your help designing an app directory for all the classes that are being held over the next few months. Include information about the person hosting the class, what dishes they’ll be teaching and another screen for information on their home country.
+              This startup company was created as the owner saw a need to help refugees integrate into the community. Many people feel very isolated in a new place. After working with so many refugees the owner realised that most people had a real passion for food so this series of classes was born. Briefbox.me published the request for design of a directory app. The app should include information about the person hosting the class, what dishes they’ll be teaching and another screen for information on their home country.
               </Typography>
               <Typography variant="h6" align="left" color="primary">
-                 Desk reserch:
+              Desk research:
               </Typography>
               <Typography className={text.paragraph}>
-                I started with looking up what is alredy in the app store. There are several recipe manager apps (Copy me That recipe manager, Recipe Keeper, Favorite Recipes ). For comunication and classes people use other apps MeetUp and Fasebook. 
+              I started with looking up what is already in the App Store and Google Play. There are several recipe manager apps (Copy me That recipe manager, Recipe Keeper, Favorite Recipes ). For communication and classes people use other apps MeetUp and Facebook. 
               </Typography>
               <Typography variant="h6" align="left" color="primary">
                 User research:
               </Typography>
               <Typography className={text.paragraph}>
-                I asked questions to my fiends from other countries. I know that there were cooking classes about healthy recipes in our area. It was organised using Facebook and text masages. It would take some effords to make people use a seporate app for this pupouse. May be if the app would offer an authentic experiense of nowing somebody how is living a world away and promise some adanture and health benifits. 
+              I know that there were cooking classes about healthy recipes in our area. It was organised using Facebook and text messages. It would take some efforts to make people use an app dedicated for only one purpose. This app needs to be simple and give a strong feeling of connection to real people in the real world.
               </Typography>
               <Typography variant="h6" align="left" color="primary">
                 Persona creation:
               </Typography>
               <Typography className={text.paragraph}>
-                I made two of them. One is yang men and older women. Women would like to be useful and would like to teach classes. Yang men would like to have a reason to go out and meet other people. I made a list of thier tasks and what they have to see in the app to find it interesting. Looking at personas helps to create flowchart.
+              It was a brief project. Personas help to prioritize functions and help create thoughtful user-centered design. My personas for this project were: a yang man and a woman over 50. She has a need to be useful and would like to teach classes. Yang man would like to have a reason to go out and meet other people. I made a list of their tasks and what they have to see in the app to enjoy it. Looking at personas helps to create flowchart.
               </Typography>
               <Typography variant="h6" align="left" color="primary">
               Flowchart:

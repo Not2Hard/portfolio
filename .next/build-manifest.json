@@ -22,13 +22,13 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
-    "/ser_map": [
+    "/tapfork": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
       "static/runtime/main.js"
     ],
-    "/tapfork": [
+    "/tfeditor": [
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
