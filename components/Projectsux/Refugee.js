@@ -13,8 +13,8 @@ import logo from '../../public/images/profile-logo.svg';
 import brand from '~/public/text/brand';
 import { useText } from '~/theme/common';
 import useStyles from './ux-style';
-import flow from '../../public/images/profile/ref_flow.svg';
-import mosk from '../../public/images/profile/ref_mosk.svg';
+import flow from '../../public/images/profile/ux-images/ref_flow.svg';
+import mosk from '../../public/images/profile/ux-images/ref_mosk.svg';
 import clsx from 'clsx';
 
 const Refugee = () => {
@@ -32,7 +32,7 @@ const Refugee = () => {
         <Container maxWidth="md" component="footer">
             <section className={clsx(classes.spaceTop, classes.spaceBottom)}>
               <Typography variant="h2" align="center" gutterBottom>
-                Refugee Kitchen
+              Refugee Kitchen
               </Typography>
               <Typography variant="h4" align="center">
                 Mobile app design
@@ -69,7 +69,7 @@ const Refugee = () => {
         <Container maxWidth="lg" component="footer">
        
               <br /><br /><br />
-              <a href='/ref_flow.pdf' target="_blank" ><img src={flow} align="center" width="100%" alt="App on mobile" /></a>
+              <img src={flow} align="center" width="100%" alt="Refugee Kitchen flowchart" />
               <br /><br /><br /><br /><br />
         </Container> 
         <Container maxWidth="md" component="footer">
@@ -82,7 +82,7 @@ const Refugee = () => {
         </Container> 
         
         <Container maxWidth="lg" component="footer">
-                   <img src={mosk} align="center" width="100%" alt="App on mobile" />
+                   <img src={mosk} align="center" width="100%" alt="Refugee Kitchen app mosk up" />
         </Container>          
                 <br/> <br/>
                

@@ -16,44 +16,44 @@ const portfolio = [
   {
     img: imgAPI.profile[4],
     title: 'Tap & Fork app',
-    link: 'http://localhost:3007/en/tapfork',
+    link: 'tapfork',
     size: 'long',
     category: 'ux'
   },
   {
     img: imgAPI.profile[3],
     title: 'Tap & Fork ad editor',
-    link: 'http://localhost:3007/en/tfeditor',
+    link: 'tfeditor',
     size: 'short',
     category: 'ux'
   },
   {
     img: imgAPI.profile[5],
     title: 'AWS account overview app',
-    link: 'http://localhost:3007/en/ser_map',
+    link: 'aws_map',
     size: 'short',
-    category: 'cat3'
+    category: 'ux'
   },
   {
     img: imgAPI.profile[6],
     title: 'Refugee kitchen',
-    link: 'http://localhost:3007/en/refkitchen',
+    link: 'refkitchen',
     size: 'short',
-    category: 'cat1'
-  },
-  {
-    img: imgAPI.profile[8],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'short',
-    category: 'cat2'
+    category: 'ux'
   },
   {
     img: imgAPI.profile[7],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    title: 'New Vision Martial Art',
+    link: 'nv_martialarts',
     size: 'short',
-    category: 'cat3'
+    category: 'WordPress'
+  },
+  {
+    img: imgAPI.profile[8],
+    title: 'Dao',
+    link: 'dao',
+    size: 'short',
+    category: 'JavaScript'
   },
   {
     img: imgAPI.profile[3],
@@ -142,16 +142,16 @@ function GallerySmall(props) {
             Category 2
           </Button>
           <Button
-            onClick={() => filterChildren('cat3')}
-            className={filter === 'cat3' ? classes.selected : ''}
+            onClick={() => filterChildren('JavaScript')}
+            className={filter === 'JavaScript' ? classes.selected : ''}
           >
-            Category 3
+            JavaScript
           </Button>
           <Button
-            onClick={() => filterChildren('cat4')}
-            className={filter === 'cat4' ? classes.selected : ''}
+            onClick={() => filterChildren('WordPress')}
+            className={filter === 'WordPress' ? classes.selected : ''}
           >
-            Category 4
+            WordPress
           </Button>
           <Button
             onClick={() => filterChildren('ux')}

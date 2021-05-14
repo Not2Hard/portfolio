@@ -12,8 +12,8 @@ import brand from '../public/text/brand';
 import { withTranslation } from '../i18n';
 import TapFork from '../components/Projectsux/Tf.js'
 import Container from '@material-ui/core/Container';
-import tfmock from '../public/images/profile/tf-images/tapandfork.jpg';
-import tfhead from '../public/images/profile/tf_header.jpg'
+import tfmock from '../public/images/profile/ux-images/tapandfork.jpg';
+import tfhead from '../public/images/profile/ux-images/tf_header.jpg'
 
 const sectionMargin = margin => (margin * 10);
 const useStyles = makeStyles(theme => ({

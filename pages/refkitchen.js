@@ -12,15 +12,15 @@ import { withTranslation } from '../i18n';
 import Refugee from '../components/Projectsux/Refugee.js';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import refhead from '../public/images/profile/ref_head.jpg'
+import refhead from '../public/images/profile/ux-images/ref_head.jpg'
 
-import signin from '../public/images/profile/ref_signin.svg';
-import classlist from '../public/images/profile/ref_classes.svg';
-import aboutclass from '../public/images/profile/ref_class.svg';
-import country from '../public/images/profile/ref_country.svg';
-import recipe from '../public/images/profile/ref_recipe.svg';
-import recipes from '../public/images/profile/ref_recipes.svg';
-import chef from '../public/images/profile/ref_chef.svg';
+import signin from '../public/images/profile/ux-images/ref_signin.svg';
+import classlist from '../public/images/profile/ux-images/ref_classes.svg';
+import aboutclass from '../public/images/profile/ux-images/ref_class.svg';
+import country from '../public/images/profile/ux-images/ref_country.svg';
+import recipe from '../public/images/profile/ux-images/ref_recipe.svg';
+import recipes from '../public/images/profile/ux-images/ref_recipes.svg';
+import chef from '../public/images/profile/ux-images/ref_chef.svg';
 
 
 
