@@ -56,18 +56,18 @@ const portfolio = [
     category: 'JavaScript'
   },
   {
-    img: imgAPI.profile[3],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    img: imgAPI.profile[9],
+    title: 'Memory Game',
+    link: 'memory_game',
     size: 'short',
-    category: 'cat1'
+    category: 'JavaScript'
   },
   {
     img: imgAPI.profile[5],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    title: 'stock_board',
+    link: 'stock_board',
     size: 'short',
-    category: 'cat2'
+    category: 'JavaScript'
   },
   {
     img: imgAPI.profile[4],

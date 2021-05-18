@@ -38,7 +38,7 @@ const imgAPI = {
     '/images/profile/ux-images/ref_head.jpg',
     '/images/profile/wp-images/nv-logo1.jpg',
     '/images/profile/js-images/dao_flip.gif',
-    'https://via.placeholder.com/400x266/94fbf7/757575',
+    '/images/projects/memoryGame/cover.jpg',
     '/images/profile/pc-dark.jpg',
   ]
 };

@@ -28,7 +28,7 @@
 
         .quoteBlock{
             margin-top: 2rem;
-            width: 20rem;
+            width: 100%;
             text-align: left;
             
                     
@@ -91,19 +91,17 @@
         
 
         .quoteContainer{
-            max-width: 100vem;
+            max-width: 1vem;
             margin: 0 auto;
-            
     
             .quoteBlock{
                 margin-top: 2rem;
-                width: 100vw;
+                width: 100%;
                 text-align: left;
                         
                 .poem-line {
                     height: 0;
                     transform: translateY(300vw);
-    
                     text-shadow: rgba(0, 0, 0, 0) 1px 0 2px;
         
                     &.show {

@@ -1,12 +1,6 @@
-import './DaoApp.scss'
+import './daoApp.scss'
 
 import React from 'react'
-
-import daoHanzi from './imagesDao/dao_hanzi.gif'
-// import daoFlip from './images/dao_flip.gif'
-
-// const daoHanzi = "../../../public/images/dao/dao_hanzi.gif"
-// const daoFlip = "/images/dao/dao_flip.gif"
 
 import { tao, taoChn } from './daoText'
 

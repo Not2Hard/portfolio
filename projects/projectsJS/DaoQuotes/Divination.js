@@ -1,5 +1,4 @@
 import './divination.scss';
-import zen from '../../../public/images/dao/again.gif';
 
 import React from 'react';
 

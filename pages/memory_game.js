@@ -11,7 +11,7 @@ import brand from '../public/text/brand';
 import { withTranslation } from '../i18n';
 import { useText } from '~/theme/common';
 import Container from '@material-ui/core/Container';
-import DaoApp from '../projects/projectsJS/daoQuotes/DaoApp';
+import MemoryApp from '../projects/projectsJS/memoryGame/memoryApp';
 
 
 
@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-function DaoProject(props) {
+function MemoryGame(props) {
   const classes = useStyles();
   const text = useText();
   const { onToggleDark, onToggleDir, t } = props;
@@ -65,7 +65,7 @@ function DaoProject(props) {
          <section>
             <div className={classes.blueWrap}>
               <Container>
-              <DaoApp/>
+              <MemoryApp/>
               </Container>
               </div>  
           </section>
@@ -73,7 +73,7 @@ function DaoProject(props) {
         <main className={classes.containerWrap}>
           <section className={clsx(classes.spaceTop, classes.spaceBottom)}>
             <Typography variant="h2" align="center" gutterBottom>
-            DAO DE JING quotes project
+            Memory game project
             </Typography> 
             
           </section>
@@ -84,9 +84,9 @@ function DaoProject(props) {
           </Typography>
         
           <Typography className={text.paragraph}>
-          This is a small personal project. I love reading Dao de Jing. It changes my perspection on any problem.  <br/>
-          It is proven by psicologists that randomness brings more dopomine than predictable things. <br/>
-          If I doubt my desision or just need to get in tuch with something ald and wise, I take a random quote from book or my little app.
+          This is a small personal project. My daughter likes to play memory game.  <br/>
+          I wanted to meke a game specially for her. She likes to play with her favorite Little pet Shop.  <br/>
+          Small kids confuse dirrection of letters a lot. I used the letters that are harder for her to make her remember which way is "b", "d, "q" and "s".
           </Typography>
           <Typography variant="h6" align="left" color="primary">
           Used technologies:
@@ -115,14 +115,14 @@ function DaoProject(props) {
   );
 }
 
-DaoProject.propTypes = {
+MemoryGame.propTypes = {
   onToggleDark: PropTypes.func.isRequired,
   onToggleDir: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
 };
 
-DaoProject.getInitialProps = async () => ({
+MemoryGame.getInitialProps = async () => ({
   namespacesRequired: ['common'],
 });
 
-export default withTranslation('common')(DaoProject);
+export default withTranslation('common')(MemoryGame);

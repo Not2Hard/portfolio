@@ -21,13 +21,6 @@ const portfolio = [
     category: 'ux'
   },
   {
-    img: imgAPI.profile[3],
-    title: 'Tap & Fork ad editor',
-    link: 'tfeditor',
-    size: 'short',
-    category: 'ux'
-  },
-  {
     img: imgAPI.profile[5],
     title: 'AWS account overview app',
     link: 'aws_map',
@@ -49,6 +42,13 @@ const portfolio = [
     category: 'WordPress'
   },
   {
+    img: imgAPI.profile[3],
+    title: 'Tap & Fork ad editor',
+    link: 'tfeditor',
+    size: 'long',
+    category: 'ux'
+  },
+  {
     img: imgAPI.profile[8],
     title: 'Dao',
     link: 'dao',
@@ -56,11 +56,11 @@ const portfolio = [
     category: 'JavaScript'
   },
   {
-    img: imgAPI.profile[3],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    img: imgAPI.profile[9],
+    title: 'Memory Game',
+    link: 'memory_game',
     size: 'short',
-    category: 'cat1'
+    category: 'JavaScript'
   },
   {
     img: imgAPI.profile[5],

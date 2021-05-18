@@ -12,8 +12,6 @@
   background-color: white;
   
 
-  
-
   .lang_btn {
     padding: 0.5rem 2rem;
     // border: 1px solid rgba(0, 0, 0, 0.6);
@@ -21,8 +19,6 @@
     color: rgba(0, 0, 0, 0.8);
     }
 
-  
- 
 
   .section {    
     min-height: 1px;
@@ -44,7 +40,6 @@
     flex-grow: 1;
     text-align: center;
     margin-left: 2rem;
-   
 
   }
 
@@ -53,7 +48,7 @@
    
   }
 
-  @media (max-width:700px){
+  @media (max-width:860px){
       .img-left{
         display: none;
       }
@@ -65,14 +60,11 @@
         z-index: 20;
         margin-top: 0px;
         background-image: url('/images/projects/dao/dao_bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
       }
       .img-right{
         display: none;
-      //   position: absolute;
-      //   opacity: 0.5;
-      //   width: 75vw;
-      //  bottom:0px;
-      //   right:50px;
       }
     }
 }
