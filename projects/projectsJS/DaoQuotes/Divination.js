@@ -1,9 +1,9 @@
-// import './divination.scss';
-import zen from './images/again.gif';
+import './divination.scss';
+import zen from '../../../public/images/dao/again.gif';
 
 import React from 'react';
 
-// import { tao, taoChn } from './dao'
+import { tao, taoChn } from './daoText'
 
 const initialState = {
     askAquestion: true,
@@ -23,6 +23,11 @@ export default class Divination extends React.Component {
 
     handleClick = (event) =>  { 
         event.preventDefault()
+        this. getQuote()
+    }
+
+    getQuote = () =>  { 
+       
         this.setState({ askAquestion: false })
 // is it english or chinese
         // const source = this.props.isEnglish
@@ -67,6 +72,7 @@ export default class Divination extends React.Component {
 
     resetAll = () => {
         this.setState({ ...initialState })
+        this. getQuote()
         
     }
 
@@ -79,9 +85,9 @@ export default class Divination extends React.Component {
 
         const revealBtnMessage = this.props.isEnglish ? 'Reveal a quote...' : '显示报价...'
 
-        const contextBtnMessage = this.props.isEnglish ? 'This quote in chapter' : '本章引用'
+        const contextBtnMessage = this.props.isEnglish ? 'Read the chapter' : '阅读本章'
 
-        const againBtnMessage = this.props.isEnglish ? 'Start again' : '重新开始'
+        const againBtnMessage = this.props.isEnglish ? 'New Quote' : '新报价'
 
 
         return (
@@ -119,16 +125,14 @@ export default class Divination extends React.Component {
                         
                         shouldShowButton && (
                             <div className="details">
-    <a className="reveal_btn" onClick={this.handleShowPoem}>{contextBtnMessage}</a>
+                                <a className="reveal_btn" onClick={this.handleShowPoem}>{contextBtnMessage}</a>
                             </div>
                         )
                     }
                      {
                             !askAquestion && (
                             <div className="again_btn">
-                            <a href="#" onClick={this.resetAll} className="zen_btn" alt="new quote from Dao">
-                                <img className="try_again" src={zen} alt="try again"></img> {againBtnMessage}
-                            </a>
+                                <a href="#" onClick={this.resetAll} className="zen_btn" alt="new quote from Dao">{againBtnMessage}</a>
                             </div>)
                         }
                 </div>

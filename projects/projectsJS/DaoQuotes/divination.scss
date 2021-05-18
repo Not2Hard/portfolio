@@ -34,7 +34,7 @@
                     
             .poem-line {
                 height: 0;
-                transform: translateY(175vw);
+                transform: translateY(300vw);
                 line-height: 1.8em;
                 text-shadow: rgba(0, 0, 0, 0) 1px 0 2px;
     
@@ -86,7 +86,7 @@
     }
     
 
-    @media (max-width: 385px) {
+    @media (max-width: 800px) {
 
         
 
@@ -102,7 +102,7 @@
                         
                 .poem-line {
                     height: 0;
-                    transform: translateY(175vw);
+                    transform: translateY(300vw);
     
                     text-shadow: rgba(0, 0, 0, 0) 1px 0 2px;
         

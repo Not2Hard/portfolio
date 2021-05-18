@@ -4,10 +4,13 @@
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap');
 
 .app {
-  max-width: 60rem;
-  min-width: 375px;
+  max-width: 80rem;
+  min-width: 475px;
   margin: 0 auto;
+  padding: 40px;
   display: flex;
+  background-color: white;
+  
 
   
 
@@ -52,27 +55,24 @@
 
   @media (max-width:700px){
       .img-left{
-
         display: none;
-        
       }
       .main{
         flex-grow: 1;
+        position: relative; 
         text-align: center;
         margin: 0 auto;
         z-index: 20;
-        margin-top: 160px;
-        
-
-      
+        margin-top: 0px;
+        background-image: url('/images/projects/dao/dao_bg.jpg');
       }
-
       .img-right{
-        position: absolute;
-        opacity: 0.5;
-        width: 75vw;
-        top:0px;
-        left:0px;
+        display: none;
+      //   position: absolute;
+      //   opacity: 0.5;
+      //   width: 75vw;
+      //  bottom:0px;
+      //   right:50px;
       }
     }
 }

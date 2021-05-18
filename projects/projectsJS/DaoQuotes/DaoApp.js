@@ -1,14 +1,14 @@
-import './App.scss'
+import './DaoApp.scss'
 
 import React from 'react'
 
-// import daoHanzi from './images/dao_hanzi.gif'
+import daoHanzi from './imagesDao/dao_hanzi.gif'
 // import daoFlip from './images/dao_flip.gif'
 
-// const daoHanzi = "/images/dao/dao_hanzi.gif"
+// const daoHanzi = "../../../public/images/dao/dao_hanzi.gif"
 // const daoFlip = "/images/dao/dao_flip.gif"
 
-import { tao, taoChn } from './dao'
+import { tao, taoChn } from './daoText'
 
 import Divination from './Divination.js'
 
@@ -33,13 +33,15 @@ export default class DaoApp extends React.Component {
     const header = isEnglish ? 'Divination through DAO DE JING quotes' : '通过占卜 道德静语录'
     
     const message = isEnglish ? '中文' : 'Engish'
+
+    // const appstyle = { backgroundImage: `url("/images/projects/dao/dao_flip.gif")` }
     //`url(${img})`
     
     return (
-      <div className="app">
+      <div className="app"  >
          
           <div className="section left">
-            <img className="img-left" src="/images/dao_hanzi.gif" alt="Dao Hanzi"></img>
+            <img className="img-left" src="/images/projects/dao/dao_hanzi.gif" alt="Dao Hanzi"></img>
           </div>
       <div className="section main">
           <header>
@@ -51,7 +53,7 @@ export default class DaoApp extends React.Component {
           </article>
       </div>
           <div className="section right">
-            <img className="img-right" src="/images/dao_flip.gif" alt="Dao Hanzi"></img>
+            <img className="img-right" src="/images/projects/dao/dao_flip.gif" alt="Dao Hanzi"></img>
           </div>
       </div>
     );

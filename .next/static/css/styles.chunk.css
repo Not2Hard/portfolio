@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Merienda&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap);
 @charset "UTF-8";
 
 /*!
@@ -4899,3 +4901,149 @@ body .top-loading-bar {
   .hamburger--vortex-r.is-active .hamburger-inner::after {
     bottom: 0;
     transform: rotate(-90deg); }
+.app {
+  max-width: 80rem;
+  min-width: 475px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  background-color: white;
+}
+.app .lang_btn {
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+.app .section {
+  min-height: 1px;
+  min-width: 1px;
+  margin: 0;
+}
+.app .section header {
+  width: 23rem;
+  margin: 0 auto;
+}
+.app .img-left {
+  width: 10rem;
+}
+.app .main {
+  flex-grow: 1;
+  text-align: center;
+  margin-left: 2rem;
+}
+.app .img-right {
+  width: 18rem;
+}
+@media (max-width: 700px) {
+  .app .img-left {
+    display: none;
+  }
+  .app .main {
+    flex-grow: 1;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 20;
+    margin-top: 0px;
+    background-image: url("/images/projects/dao/dao_bg.jpg");
+  }
+  .app .img-right {
+    display: none;
+  }
+}
+.divination .question {
+  display: block;
+}
+.divination .question.hide {
+  display: none;
+}
+.divination .reveal_btn {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 1rem;
+}
+.divination .chapter_btn {
+  display: none;
+}
+.divination .quoteContainer {
+  max-width: 20rem;
+  margin: 0 auto;
+}
+.divination .quoteContainer .quoteBlock {
+  margin-top: 2rem;
+  width: 20rem;
+  text-align: left;
+}
+.divination .quoteContainer .quoteBlock .poem-line {
+  height: 0;
+  transform: translateY(300vw);
+  line-height: 1.8em;
+  text-shadow: rgba(0, 0, 0, 0) 1px 0 2px;
+}
+.divination .quoteContainer .quoteBlock .poem-line.show {
+  margin: 0.3rem 0;
+  height: initial;
+  transform: translateY(0);
+  transition: 1s;
+  transition-timing-function: cubic-bezier(0.01, 0.59, 0.98, 0.76);
+}
+.divination .quoteContainer .quoteBlock .poem-line.highlight {
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 0 2px;
+}
+.divination .quoteContainer .details {
+  margin-top: 3rem;
+}
+.divination .again_btn {
+  margin-top: 2rem;
+}
+.divination .again_btn .zen_btn {
+  width: 10rem;
+  height: 3rem;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 2rem;
+  margin: 0 auto;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divination .again_btn .zen_btn .try_again {
+  width: 3srem;
+  height: 3rem;
+}
+@media (max-width: 800px) {
+  .divination .quoteContainer {
+    max-width: 100vem;
+    margin: 0 auto;
+  }
+  .divination .quoteContainer .quoteBlock {
+    margin-top: 2rem;
+    width: 100vw;
+    text-align: left;
+  }
+  .divination .quoteContainer .quoteBlock .poem-line {
+    height: 0;
+    transform: translateY(300vw);
+    text-shadow: rgba(0, 0, 0, 0) 1px 0 2px;
+  }
+  .divination .quoteContainer .quoteBlock .poem-line.show {
+    margin: 0.3rem 0;
+    height: initial;
+    transform: translateY(0);
+    transition: 1s;
+    transition-timing-function: cubic-bezier(0.45, 0.11, 0.66, 1.72);
+  }
+  .divination .quoteContainer .quoteBlock .poem-line.highlight {
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 0 2px;
+  }
+  .divination .quoteContainer .details {
+    margin-top: 3rem;
+  }
+  .divination .quoteContainer .details button {
+    cursor: pointer;
+  }
+}

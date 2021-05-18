@@ -9,13 +9,11 @@ import Header from '../components/Header';
 import GallerySmall from '../components/Gallery/GallerySmall'
 import brand from '../public/text/brand';
 import { withTranslation } from '../i18n';
-import NVmartial from '../components/ProjectsWP/NVmartial.js'
+import { useText } from '~/theme/common';
 import Container from '@material-ui/core/Container';
-import nvweb from '../public/images/profile/js-images/dao_flip.gif';
-import nvwin from '../public/images/profile/wp-images/nv-windows.jpg';
-import nvadd1 from '../public/images/profile/wp-images/nv-add1.jpg';
-import nvadd2 from '../public/images/profile/wp-images/nv-add2.jpg';
-import header from '../public/images/profile/wp-images/nv_head.jpg';
+import DaoApp from '../projects/projectsJS/DaoQuotes/DaoApp';
+
+
 
 const sectionMargin = margin => (margin * 10);
 const useStyles = makeStyles(theme => ({
@@ -45,8 +43,9 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-function AWSmap(props) {
+function DaoProject(props) {
   const classes = useStyles();
+  const text = useText();
   const { onToggleDark, onToggleDir, t } = props;
   return (
     <React.Fragment>
@@ -63,22 +62,53 @@ function AWSmap(props) {
           onToggleDir={onToggleDir}
           invert
         />
-         <div className={classes.headderImg} >
-             {/* <img src={header} align="center" width="100%"  alt="App on mobile" />  */}
-             </div>
+         <section>
+            <div className={classes.blueWrap}>
+              <Container>
+              <DaoApp/>
+              </Container>
+              </div>  
+          </section>
+         
         <main className={classes.containerWrap}>
           <section className={clsx(classes.spaceTop, classes.spaceBottom)}>
             <Typography variant="h2" align="center" gutterBottom>
-            Divination through DAO DE JING quotes
+            DAO DE JING quotes project
             </Typography> 
-            {/* <DaoApp/> */}
+            
           </section>
+          <Container maxWidth="md" component="footer">
+          
+          <Typography variant="h6" align="left" >
+            Project Description:
+          </Typography>
+        
+          <Typography className={text.paragraph}>
+          New school of martial arts was opening in Dallas, GA. <br/>
+          Owner objectives:
+          <ul>
+                <li>To be within 1-5 in Google or Martial Arts Acworth GA, Martial Arts Dallas GA, and Martial Arts Kennesaw GA</li>
+                <li>Create a unique and successful brand</li>
+                <li>Have one place for all info about classes</li>
+                <li>Create a simple signup and payment process online</li>
+              </ul>
+          </Typography>
+          {/* <Typography className={text.paragraph}>
+            <b>My role in this project</b> - I was hired to create a branding, website and give some essential graphics support.
+          </Typography>
+          <Typography variant="h6" align="left" color="primary">
+          Desk research:
+          </Typography>
+          <Typography className={text.paragraph}>
+          I made a detailed analysis of existing martial arts schools in Dalas and Acworth, GA. Most successful businesses were using industry specialized marketing companies. The targeted auditory was parents looking for kids classes and adult weight loss programs. 
+          </Typography> */}
+          </Container>
          
           </main>
           <section>
             <div className={classes.blueWrap}>
               <Container>
-              <img src={nvweb} alt="tap and fork" align="center" width="100%"/><br/><br/>
+              
               </Container>
               </div>  
           </section>
@@ -91,14 +121,14 @@ function AWSmap(props) {
   );
 }
 
-AWSmap.propTypes = {
+DaoProject.propTypes = {
   onToggleDark: PropTypes.func.isRequired,
   onToggleDir: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
 };
 
-AWSmap.getInitialProps = async () => ({
+DaoProject.getInitialProps = async () => ({
   namespacesRequired: ['common'],
 });
 
-export default withTranslation('common')(AWSmap);
+export default withTranslation('common')(DaoProject);
