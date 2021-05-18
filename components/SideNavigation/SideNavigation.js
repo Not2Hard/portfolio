@@ -22,6 +22,7 @@ function createData(name, url, offset) {
     offset,
   };
 }
+const logourl = "/images/profile-logo.svg";
 
 function SideNavigation(props) {
   const classes = useStyles();
@@ -40,7 +41,7 @@ function SideNavigation(props) {
       <Container fixed>
         <nav className={classes.navMenu}>
           <AnchorLink href="#home" className={classes.logo}>
-            <img src={logo} alt="logo" />
+            <img src={logourl} alt="logo" />
           </AnchorLink>
           <List component="nav" className={classes.menu}>
             <Scrollspy

@@ -4899,17 +4899,3 @@ body .top-loading-bar {
   .hamburger--vortex-r.is-active .hamburger-inner::after {
     bottom: 0;
     transform: rotate(-90deg); }
-.logoRAnim {
-    display: flex;
-    height: 10;
-    animation: roll 4s linear infinite;
-  }
-  
-  @keyframes roll {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }

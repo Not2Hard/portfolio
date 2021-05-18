@@ -15,7 +15,7 @@ export default function ImageThumb(props) {
     title,
     link,
     size,
-  } = props;
+  } = props;  
 
   const setSize = sizePaper => {
     switch (sizePaper) {

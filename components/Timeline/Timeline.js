@@ -14,9 +14,9 @@ import { useText } from '~/theme/common';
 import useStyles from './timeline-style';
 import './logoR.css'
 import brand from '~/public/text/brand';
-import logo from '~/public/images/profile/reactlogo.png';
+// import logo from '~/public/images/profile/reactlogo.png';
 
-
+const reactLogo = "~/public/images/profile/reactlogo.png"
 
 function Timeline(props) {
   const classes = useStyles();
@@ -136,7 +136,7 @@ function Timeline(props) {
                     <li>
                       <div className={classes.textIcon}>
                       {/* <i className="ion-code-working" /> */}
-                        <img src={logo} className="logoRAnim" alt="logo" />
+                        <img src="/images/profile/reactlogo.png" className="logoRAnim" alt="logo" />
                         <Typography variant="h6" className={text.subtitle2}>ReactJS</Typography>
                       </div>
                       <LinearProgress

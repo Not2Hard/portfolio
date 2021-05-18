@@ -11,12 +11,13 @@ import Container from '@material-ui/core/Container';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Fade from '@material-ui/core/Fade';
 import { withTranslation } from '~/i18n';
-import logo from '~/public/images/profile-logo.svg';
+// import logo from '~/public/images/profile-logo.svg';
 import routeLink from '~/public/text/link';
 import '~/vendors/hamburger-menu.css';
 import useStyles from './header-style';
 import Settings from '../Settings';
 import navMenu from '../SideNavigation/menu';
+
 
 let counter = 0;
 function createData(name, url, offset) {
@@ -38,6 +39,8 @@ function Header(props) {
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up('md'));
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
+
 
   const [fixed, setFixed] = useState(false);
   let flagFixed = false;
@@ -107,12 +110,12 @@ function Header(props) {
                 {invert ? (
                   <Link href={routeLink.profile.home}>
                     <a>
-                      <img src={logo} alt="logo" />
+                      <img src="/images/profile-logo.svg" alt="logo" />
                     </a>
                   </Link>
                 ) : (
                   <AnchorLink href="#home">
-                    <img src={logo} alt="logo" />
+                    <img src="/images/profile-logo.svg" alt="logo" />
                   </AnchorLink>
                 )}
               </div>

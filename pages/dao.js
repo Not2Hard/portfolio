@@ -16,7 +16,6 @@ import nvwin from '../public/images/profile/wp-images/nv-windows.jpg';
 import nvadd1 from '../public/images/profile/wp-images/nv-add1.jpg';
 import nvadd2 from '../public/images/profile/wp-images/nv-add2.jpg';
 import header from '../public/images/profile/wp-images/nv_head.jpg';
-import DaoApp from '../components/DaoQuotes/DaoApp'
 
 const sectionMargin = margin => (margin * 10);
 const useStyles = makeStyles(theme => ({
@@ -72,7 +71,7 @@ function AWSmap(props) {
             <Typography variant="h2" align="center" gutterBottom>
             Divination through DAO DE JING quotes
             </Typography> 
-            <DaoApp/>
+            {/* <DaoApp/> */}
           </section>
          
           </main>
