@@ -35,31 +35,33 @@ const TickerChart = (props) => {
     <div className={className}>
       <ReactResizeDetector handleWidth handleHeight onResize={onChartResize} width='inherit'>
         <div className="ticker-chart-container" ref={chartContainerRef}>
-          <div className="ticker-chart" ref={chartRef}><TradingViewWidget
-          symbol={ticker}
-          interval='D'
-          timezone='America/New_York'
-          datafeed={client}
-          library_path={"/charting_library/"}
-          locale={"en"}
-          disabled_features={["use_localstorage_for_settings"]}
-          // enabled_features={["study_templates"]}
-          charts_storage_url={"http://saveload.tradingview.com"}
-          charts_storage_api_version={"1.1"}
-          client_id="tradingview.com"
-          user_id="public_user_id"
-          theme="Light" /* Light or Dark */
-          width={chartWidth}
-          // width="600"
-          autosize={true}
-          // height="330"
-          style="3"
-          toolbar_bg= "#f1f3f6"
-          enable_publishing={false}
-          hide_top_toolbar={true}
-          withdateranges={true}
+          <div className="ticker-chart" ref={chartRef}>
 
-        />
+            <TradingViewWidget
+              symbol={ticker}
+              interval='D'
+              timezone='America/New_York'
+              datafeed={client}
+              library_path={"/charting_library/"}
+              locale={"en"}
+              disabled_features={["use_localstorage_for_settings"]}
+              // enabled_features={["study_templates"]}
+              charts_storage_url={"http://saveload.tradingview.com"}
+              charts_storage_api_version={"1.1"}
+              client_id="tradingview.com"
+              user_id="public_user_id"
+              theme="Light"
+              width={chartWidth}
+              // width="600"
+              autosize={true}
+              // height="330"
+              style="3"
+              toolbar_bg= "#f1f3f6"
+              enable_publishing={false}
+              hide_top_toolbar={true}
+              withdateranges={true}
+            />
+
           </div>
         </div>
       </ReactResizeDetector>

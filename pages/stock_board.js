@@ -41,10 +41,10 @@ const useStyles = makeStyles(theme => ({
       position: 'relative'
     }
   },
-}));
+}))
 
-function MemoryGame(props) {
-  const classes = useStyles();
+function StockBoard(props) {
+  const classes = useStyles()  
   const text = useText();
   const { onToggleDark, onToggleDir, t } = props;
   return (
@@ -63,10 +63,8 @@ function MemoryGame(props) {
           invert
         />
          <section>
-            <div className={classes.blueWrap}>
-             
-              {/* <StockApp/> */}
-             
+            <div className={classes.blueWrap}>     
+              <StockApp />
               </div>  
           </section>
          
@@ -102,27 +100,25 @@ function MemoryGame(props) {
           <section>
             <div className={classes.blueWrap}>
               <Container>
-              
+                <div>HELLO</div>              
               </Container>
               </div>  
           </section>
           
           <GallerySmall/>
-        
-        {/* <Notification /> */}
       </div>
     </React.Fragment>
   );
 }
 
-MemoryGame.propTypes = {
+StockBoard.propTypes = {
   onToggleDark: PropTypes.func.isRequired,
   onToggleDir: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
 };
 
-MemoryGame.getInitialProps = async () => ({
+StockBoard.getInitialProps = async () => ({
   namespacesRequired: ['common'],
 });
 
-export default withTranslation('common')(MemoryGame);
+export default withTranslation('common')(StockBoard)

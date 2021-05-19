@@ -277,7 +277,6 @@ export default class TickerSearch extends React.Component {
         </div>
       </div>
       </section>
-
     )
   }
 }

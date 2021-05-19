@@ -9,7 +9,7 @@ import Header from '../components/Header';
 import GallerySmall from '../components/Gallery/GallerySmall'
 import brand from '../public/text/brand';
 import { withTranslation } from '../i18n';
-import NVmartial from '../components/ProjectsWP/NVmartial.js'
+import NVmartial from '../projects/projecksWP/NVmartial'
 import Container from '@material-ui/core/Container';
 import nvweb from '../public/images/profile/wp-images/nv-web.jpg';
 import nvwin from '../public/images/profile/wp-images/nv-windows.jpg';

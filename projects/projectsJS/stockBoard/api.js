@@ -1,6 +1,6 @@
 
 import Axios from 'axios'
-import {BASE_URL, API_KEY} from 'keys.js'
+import { BASE_URL, API_KEY } from './keys.js'
 
 export function searchTickers(searchString) {
     return new Promise((resolve,reject) => {
