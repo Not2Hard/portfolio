@@ -8,6 +8,8 @@ module.exports = withImages(withCSS(withSass({
       return {
         '/': { page: '/' },
         '/blank-page': { page: '/blank-page' },
+        '/memory_game': { page: '/memory_game' },
+        '/dao': { page: '/dao' },
       };
     },
     publicRuntimeConfig: {

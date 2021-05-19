@@ -11,7 +11,7 @@ import brand from '../public/text/brand';
 import { withTranslation } from '../i18n';
 import { useText } from '~/theme/common';
 import Container from '@material-ui/core/Container';
-import MemoryApp from '../projects/projectsJS/memoryGame/memoryApp';
+import StockApp from '../projects/projectsJS/stockBoard/StockApp';
 
 
 
@@ -65,7 +65,7 @@ function MemoryGame(props) {
          <section>
             <div className={classes.blueWrap}>
              
-              <MemoryApp/>
+              {/* <StockApp/> */}
              
               </div>  
           </section>

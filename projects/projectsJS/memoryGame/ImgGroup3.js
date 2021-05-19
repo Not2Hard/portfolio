@@ -1,9 +1,4 @@
-import b from './images/game3/b.jpg'
-import d from './images/game3/d.jpg'
-import q from './images/game3/q.jpg'
-import s from './images/game3/s.jpg'
- 
-export default [
+ export default [
     { image: "/images/projects/memoryGame/game3/b.jpg", id: '17', compareId:'b'},
     { image: "/images/projects/memoryGame/game3/d.jpg", id: '18', compareId:'d'},
     { image: "/images/projects/memoryGame/game3/q.jpg", id: '19', compareId:'q'},
