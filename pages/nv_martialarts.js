@@ -11,11 +11,7 @@ import brand from '../public/text/brand';
 import { withTranslation } from '../i18n';
 import NVmartial from '../projects/projecksWP/NVmartial'
 import Container from '@material-ui/core/Container';
-import nvweb from '../public/images/profile/wp-images/nv-web.jpg';
-import nvwin from '../public/images/profile/wp-images/nv-windows.jpg';
-import nvadd1 from '../public/images/profile/wp-images/nv-add1.jpg';
-import nvadd2 from '../public/images/profile/wp-images/nv-add2.jpg';
-import header from '../public/images/profile/wp-images/nv_head.jpg';
+
 
 const sectionMargin = margin => (margin * 10);
 const useStyles = makeStyles(theme => ({

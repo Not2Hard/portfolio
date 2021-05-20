@@ -36,7 +36,7 @@ const imgAPI = {
     '/images/profile/ux-images/tf-screens.jpg',
     '/images/profile/ux-images/aws_min.jpg',
     '/images/profile/ux-images/ref_head.jpg',
-    '/images/profile/wp-images/nv-logo1.jpg',
+    '/images/projects/nv-ma/nv-logo1.jpg',
     '/images/profile/js-images/dao_flip.gif',
     '/images/projects/memoryGame/cover.jpg',
     '/images/profile/pc-dark.jpg',
