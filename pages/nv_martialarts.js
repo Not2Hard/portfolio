@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-function AWSmap(props) {
+function NVMAapp(props) {
   const classes = useStyles();
   const { onToggleDark, onToggleDir, t } = props;
   return (
@@ -63,7 +63,7 @@ function AWSmap(props) {
           onToggleDir={onToggleDir}
           invert
         />
-         <div className={classes.headderImg} ><img src={header} align="center" width="100%"  alt="App on mobile" /> </div>
+         <div className={classes.headderImg} ><img src="/images/projects/nv-ma/nv_head.jpg" align="center" width="100%"  alt="App on mobile" /> </div>
         <main className={classes.containerWrap}>
           <section className={clsx(classes.spaceTop, classes.spaceBottom)}>
             <Typography variant="h2" align="center" gutterBottom>
@@ -73,13 +73,13 @@ function AWSmap(props) {
           </section>
           <NVmartial/> 
           </main>
-          <section>
+          
             <div className={classes.blueWrap}>
               <Container>
-              <img src={nvweb} alt="tap and fork" align="center" width="100%"/><br/><br/>
+              <img src="/images/projects/nv-ma/nv-web.jpg" alt="tap and fork" align="center" width="100%"/><br/><br/>
               </Container>
               </div>  
-          </section>
+         
           
           <GallerySmall/>
         
@@ -89,14 +89,14 @@ function AWSmap(props) {
   );
 }
 
-AWSmap.propTypes = {
+NVMAapp.propTypes = {
   onToggleDark: PropTypes.func.isRequired,
   onToggleDir: PropTypes.func.isRequired,
   t: PropTypes.func.isRequired,
 };
 
-AWSmap.getInitialProps = async () => ({
+NVMAapp.getInitialProps = async () => ({
   namespacesRequired: ['common'],
 });
 
-export default withTranslation('common')(AWSmap);
+export default withTranslation('common')(NVMAapp);

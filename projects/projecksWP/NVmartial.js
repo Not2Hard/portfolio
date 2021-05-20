@@ -5,23 +5,11 @@ import PropTypes from 'prop-types';
 import Container from '@material-ui/core/Container';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
 import { withTranslation } from '~/i18n';
-import logo from '../../public/images/profile-logo.svg';
-import brand from '~/public/text/brand';
 import { useText } from '~/theme/common';
 import useStyles from './wp-style';
-import ContactForm from '../Contact/Form';
-import nwlogo1 from '../../public/images/profile/wp-images/nv-logo1.jpg';
-import nwlogo2 from '../../public/images/profile/wp-images/nv-logo2.jpg';
-import nwwind from '../../public/images/profile/wp-images/nv-windows.jpg';
-import nvadd1 from '../../public/images/profile/wp-images/nv-add1.jpg';
-import nvadd2 from '../../public/images/profile/wp-images/nv-add2.jpg';
-import tf2 from '../../public/images/profile/ux-images/tafs2.jpg';
-import users from '../../public/images/profile/tf-images/users.jpg';
-import tfmock from '../../public/images/profile/tf-images/tapandfork.jpg';
+
 
 const NVmartial = () => {
   const [pageNumber, setPageNumber] = useState(1);
@@ -87,11 +75,11 @@ const NVmartial = () => {
           <Typography className={text.paragraph}>
           It was important to translate the personality of the teacher and his talent to work with teenagers and kids. He has a recognizable good kick so I traced a photo of his cick into the logo and added some brite non traditional details. 
           </Typography>
-          <img src={nwlogo1} align="center"  alt="AWS accounts map" className={classes.img4dec} />
+          <img src="/images/projects/nv-ma/nv-logo1.jpg" align="center"  alt="AWS accounts map" className={classes.img4dec} />
           <Typography className={text.paragraph}>
               
               This logo was developed with a variant that is good for one and two color printing in a traditional looking way. The owner likes to use them all. <br/><br/>
-          <img src={nwlogo2} align="center" width="50%" alt="AWS accounts map" className={classes.img4dec} /><br/><br/>
+          <img src="/images/projects/nv-ma/nv-logo2.jpg" align="center" width="50%" alt="AWS accounts map" className={classes.img4dec} /><br/><br/>
           </Typography>
           <Typography variant="h6" align="left" color="primary">
           WordPress theme:
@@ -106,15 +94,15 @@ const NVmartial = () => {
           <Typography className={text.paragraph}>
           A new business needs at least basic promotional materials. To attract attention on the shopping plaza window decorations and "A" stand. To spread the word in printed catalogs a full page add. <br/><br/>
              
-            <img src={nwwind} align="center" width="100%" alt="AWS accounts map" className={classes.img4dec}/> 
+            <img src="/images/projects/nv-ma/nv-windows.jpg" align="center" width="100%" alt="AWS accounts map" className={classes.img4dec}/> 
             <div className={classes.img4decCaption}>Window decals </div>
             <br/><br/>
             
-            <img src={nvadd1} align="center" width="50%" alt="AWS accounts map" className={classes.img4dec}/> 
+            <img src="/images/projects/nv-ma/nv-add1.jpg" align="center" width="50%" alt="AWS accounts map" className={classes.img4dec}/> 
             <div className={classes.img4decCaption}> A full page add for the local catalog </div>
             <br/><br/>
             
-            <img src={nvadd2} align="center" width="50%" alt="AWS accounts map"className={classes.img4dec} /> 
+            <img src="/images/projects/nv-ma/nv-add2.jpg" align="center" width="50%" alt="AWS accounts map"className={classes.img4dec} /> 
             <div className={classes.img4decCaption}> "A" stand to atract attention of walking public.  </div>
             <br/><br/>
            </Typography>
