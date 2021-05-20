@@ -10,10 +10,8 @@ import GallerySmall from '../components/Gallery/GallerySmall'
 import Notification from '../components/Notification';
 import brand from '../public/text/brand';
 import { withTranslation } from '../i18n';
-import TapFork from '../components/Projectsux/Tf.js'
+import TapFork from '../projects/projectsUX/tap_fork/Tf.js'
 import Container from '@material-ui/core/Container';
-import tfmock from '../public/images/profile/ux-images/tapandfork.jpg';
-import tfhead from '../public/images/profile/ux-images/tf_header.jpg'
 
 const sectionMargin = margin => (margin * 10);
 const useStyles = makeStyles(theme => ({
@@ -35,6 +33,11 @@ const useStyles = makeStyles(theme => ({
     '& > section': {
       position: 'relative'
     }
+  },
+  img4decCaption: {
+    textAlign: 'center',
+    color: '#efefef',
+    fontStyle: 'italic',
   },
   blueWrap: {
     backgroundImage: `linear-gradient(120deg, ${theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.main}, ${theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main})`,
@@ -60,11 +63,11 @@ function TFapp(props) {
           onToggleDir={onToggleDir}
           invert
         />
-        <div className={classes.headderImg} ><img src={tfhead} align="center" width="100%"  alt="App on mobile" /> </div>
+        <div className={classes.headderImg} ><img src="/images/projects/tapAndFork/tfheader.jpg" align="center" width="100%"  alt="Page header" /> </div>
         <main className={classes.containerWrap}>
           <section className={clsx(classes.spaceTop, classes.spaceBottom)}>
             <Typography variant="h2" align="center" gutterBottom>
-              Tap & Fork mobile app
+              Tap &amp; Fork mobile app
             </Typography>
             
           </section>
@@ -73,7 +76,8 @@ function TFapp(props) {
         <section>
             <div className={classes.blueWrap}>
               <Container maxWidth="lg">
-              <a href="/tflooks.pdf" target="_blank"><img src={tfmock} alt="tap and fork" align="center" width="100%"/></a>
+              <a href="/tflooks.pdf" target="_blank"><img src="/images/projects/tapAndFork/tapandfork.jpg" alt="tap and fork" align="center" width="100%"/></a>
+              <div className={classes.img4decCaption}>Tap &amp; Fork application design</div>
               </Container>
               </div>  
           </section>

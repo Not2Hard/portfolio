@@ -5,18 +5,11 @@ import PropTypes from 'prop-types';
 import Container from '@material-ui/core/Container';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import { withTranslation } from '~/i18n';
-import logo from '../../public/images/profile-logo.svg';
-import brand from '~/public/text/brand';
 import { useText } from '~/theme/common';
-import useStyles from './ux-style';
-import tfproto from '../../public/images/profile/ux-images/tf_editor.jpg';
-import adbuilder from '../../public/images/profile/ux-images/adbuilder.jpg';
-import moskup from '../../public/images/profile/ux-images/moskup.jpg';
-// import tfflow from '../../public/images/profile/ux-images/tf-flow.svg'
+import useStyles from '../../projects-styles.js';
 
 
 const TFeditor = () => {
@@ -79,7 +72,8 @@ const TFeditor = () => {
               </ul>
               I put these features together with left-to-right construction and logic in a simple wireframe:
         </Typography>
-           <img src={moskup} align="center" alt="App on mobile" />
+           <img src="/images/projects/tapAndFork/moskup.jpg" align="center" alt="Tap and Fork moskup" />
+           <div className={classes.img4decCaption}>Web editor moskup </div>
         <Typography variant="h6" align="left" color="primary">
          Prototype: 
         </Typography>
@@ -88,7 +82,8 @@ const TFeditor = () => {
         </Typography>
         </Container> 
            <Container maxWidth="lg" component="footer">
-                   <img src={tfproto} align="center" width="100%" alt="App on mobile" />
+           <img src="/images/projects/tapAndFork/tf_editor.jpg" align="center" width="100%" alt="Tap and Fork prototype" />
+           <div className={classes.img4decCaption}>Web editor prototype </div>
           </Container> 
         <Container maxWidth="md" component="footer">
         <br/><br/>

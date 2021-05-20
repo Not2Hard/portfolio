@@ -9,12 +9,9 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import { withTranslation } from '~/i18n';
-import logo from '../../public/images/profile-logo.svg';
 import brand from '~/public/text/brand';
 import { useText } from '~/theme/common';
-import useStyles from './ux-style';
-import flow from '../../public/images/profile/ux-images/ref_flow.svg';
-import mosk from '../../public/images/profile/ux-images/ref_mosk.svg';
+import useStyles from '../../projects-styles';
 import clsx from 'clsx';
 
 const Refugee = () => {
@@ -69,8 +66,10 @@ const Refugee = () => {
         <Container maxWidth="lg" component="footer">
        
               <br /><br /><br />
-              <img src={flow} align="center" width="100%" alt="Refugee Kitchen flowchart" />
-              <br /><br /><br /><br /><br />
+              <img src="/images/projects/refugeeKit/ref_flow.svg" align="center" width="100%" alt="Refugee Kitchen flowchart" />
+              <br />
+              <div className={classes.img4decCaption}>Refugee Kitchen flowchart</div>
+              <br /><br /><br /><br />
         </Container> 
         <Container maxWidth="md" component="footer">
               <Typography variant="h6" align="left" color="primary">
@@ -82,7 +81,8 @@ const Refugee = () => {
         </Container> 
         
         <Container maxWidth="lg" component="footer">
-                   <img src={mosk} align="center" width="100%" alt="Refugee Kitchen app mosk up" />
+                   <img src="/images/projects/refugeeKit/ref_mosk.svg" align="center" width="100%" alt="Refugee Kitchen app moskup" /><br />
+                   <div className={classes.img4decCaption}>Refugee Kitchen app moskup</div>
         </Container>          
                 <br/> <br/>
                

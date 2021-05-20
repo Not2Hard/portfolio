@@ -10,9 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import { withTranslation } from '~/i18n';
 import { useText } from '~/theme/common';
-import useStyles from './ux-style';
-import tfscreens from '../../public/images/profile/ux-images/tf-screens.jpg';
-import tfflow from '../../public/images/profile/ux-images/tf-flow.svg';
+import useStyles from '../../projects-styles.js';
 
 const TapFork = () => {
   const [pageNumber, setPageNumber] = useState(1);
@@ -30,7 +28,7 @@ const TapFork = () => {
         </Typography>
         
         <Typography className={text.paragraph}>
-          Tap & Fork is an application that allows people to find restaurants. It is built to address the shortcoming of the existing applications to make the pricing strategy more attractive to restaurant owners and to allow them to fully control their marketing campaigns. With Tap & Fork, restaurant owners can easily upload images, create coupons, and run promotions. 
+          Tap &amp; Fork is an application that allows people to find restaurants. It is built to address the shortcoming of the existing applications to make the pricing strategy more attractive to restaurant owners and to allow them to fully control their marketing campaigns. With Tap & Fork, restaurant owners can easily upload images, create coupons, and run promotions. 
         </Typography>
         
         <Typography className={text.paragraph}>
@@ -40,7 +38,7 @@ const TapFork = () => {
           Desk research:
         </Typography>
           <Typography className={text.paragraph}>
-          To fully understand what set Tap & Fork apart from its competitors, it was crucial that these competitors first be identified. Other projects with similar functionality on the market were:  <br/>
+          To fully understand what set Tap &amp; Fork apart from its competitors, it was crucial that these competitors first be identified. Other projects with similar functionality on the market were:  <br/>
           <ul>
               <li>Yelp</li>
               <li>OpenTable</li>
@@ -97,7 +95,8 @@ const TapFork = () => {
            </Typography>
            </Container> 
            <Container maxWidth="lg" component="footer">
-                   <img src={tfflow} align="center" width="100%" alt="App on mobile" />
+            <img src="/images/projects/tapAndFork/tf-flow.svg" align="center" width="100%" alt="flowchart" />
+            <div className={classes.img4decCaption}>Tap&amp;Fork app flowchart </div>
           </Container> 
           <Container maxWidth="md" component="footer">
           <Typography className={text.paragraph}>
@@ -108,7 +107,8 @@ const TapFork = () => {
 
           </Typography>
           <br/>
-          <img src={tfscreens} align="center" width="100%" alt="App on mobile" />
+          <img src="/images/projects/tapAndFork/tf-screens.jpg" align="center" width="100%" alt="App on mobile" />
+          <div className={classes.img4decCaption}>Tap&amp;Fork app mobile screenshots </div>
           <br/> <br/>
           
           <Typography variant="h6" align="left">

@@ -6,21 +6,14 @@ import Typography from '@material-ui/core/Typography';
 import Head from 'next/head';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from '../components/Header';
-import GallerySmall from '../components/Gallery/GallerySmall';
+import GallerySmall from '../components/Gallery/GallerySmall'
+import Notification from '../components/Notification';
 import brand from '../public/text/brand';
 import { withTranslation } from '../i18n';
-import Refugee from '../components/Projectsux/Refugee.js';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import refhead from '../public/images/profile/ux-images/ref_head.jpg'
 
-import signin from '../public/images/profile/ux-images/ref_signin.svg';
-import classlist from '../public/images/profile/ux-images/ref_classes.svg';
-import aboutclass from '../public/images/profile/ux-images/ref_class.svg';
-import country from '../public/images/profile/ux-images/ref_country.svg';
-import recipe from '../public/images/profile/ux-images/ref_recipe.svg';
-import recipes from '../public/images/profile/ux-images/ref_recipes.svg';
-import chef from '../public/images/profile/ux-images/ref_chef.svg';
+import Refugee from '../projects/projectsUX/refugee_kit/Refugee.js';
 
 
 
@@ -55,6 +48,11 @@ const useStyles = makeStyles(theme => ({
       maxHeight: 400,
       overflow: 'hidden',
     },
+    img4decCaption: {
+      textAlign: 'center',
+      color: '#efefef',
+      fontStyle: 'italic',
+    },
     blueWrapImg: {
       margin: 10,
       float: 'left',
@@ -86,7 +84,9 @@ function RefKitchen(props) {
           onToggleDir={onToggleDir}
           invert
         />
-        <div className={classes.headderImg} ><img src={refhead} align="center" width="100%"  alt="App on mobile" /> </div>
+        <div className={classes.headderImg} >
+          <img src="/images/projects/refugeeKit/ref_head.jpg" align="center" width="100%"  alt="App on mobile" /> 
+        </div>
         <main className={classes.containerWrap}>
           <Refugee/> 
          
@@ -97,33 +97,35 @@ function RefKitchen(props) {
           <Container>
             <Grid container justify="center" alignItems="center" className={classes.root} spacing={3}>
               <Grid md={3} item>
-              <img src={signin} align="center" width="100%" alt="App on mobile" />
+              <img src="/images/projects/refugeeKit/ref_signin.svg" align="center" width="100%" alt="App on mobile" />
               </Grid>
               <Grid md={3} item>
-              <img src={signin} align="center" width="100%" alt="App on mobile" />
+              <img src="/images/projects/refugeeKit/ref_recipes.svg" align="center" width="100%" alt="App on mobile" />
               </Grid>
               <Grid md={3} item>
-              <img src={classlist} align="center" width="100%" alt="App on mobile" />
+              <img src="/images/projects/refugeeKit/ref_classes.svg" align="center" width="100%" alt="App on mobile" />
               </Grid>
               <Grid md={3} item>
-              <img src={recipes} align="center" width="100%" alt="App on mobile" />
+              <img src="images/projects/refugeeKit/ref_recipe.svg" align="center" width="100%" alt="App on mobile" />
               </Grid>
             </Grid>
+            
             <br/>
             <Grid container justify="center" alignItems="center" className={classes.root} spacing={3}>
               <Grid md={3} item>
-              <img src={aboutclass} align="center" width="100%" alt="App on mobile" />
+              <img src="/images/projects/refugeeKit/ref_class.svg" align="center" width="100%" alt="App on mobile" />
               </Grid>
               <Grid md={3} item>
-              <img src={recipe} align="center" width="100%" alt="App on mobile" />
+              <img src="images/projects/refugeeKit/ref_recipe.svg" align="center" width="100%" alt="App on mobile" />
               </Grid>
               <Grid md={3} item>
-              <img src={chef} align="center" width="100%" alt="App on mobile" />
+              <img src="/images/projects/refugeeKit/ref_chef.svg" align="center" width="100%" alt="App on mobile" />
               </Grid>
               <Grid md={3} item>
-              <img src={country} align="center" width="100%" alt="App on mobile" />
+              <img src="/images/projects/refugeeKit/ref_country.svg" align="center" width="100%" alt="App on mobile" />
               </Grid>
           </Grid>
+          <div className={classes.img4decCaption}>Refugee Kitchen application design </div>
             </Container>
         </div>  
         </section>

@@ -16,7 +16,7 @@ const portfolio = [
   {
     img: imgAPI.profile[4],
     title: 'Tap & Fork app',
-    link: 'tapfork',
+    link: 'tap_and_fork',
     size: 'long',
     category: 'ux'
   },
@@ -44,7 +44,7 @@ const portfolio = [
   {
     img: imgAPI.profile[3],
     title: 'Tap & Fork ad editor',
-    link: 'tfeditor',
+    link: 't&f_editor',
     size: 'long',
     category: 'ux'
   },
