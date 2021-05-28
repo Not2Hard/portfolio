@@ -40,6 +40,13 @@ const imgAPI = {
     '/images/projects/dao/dao_flip.gif',
     '/images/projects/memoryGame/cover.jpg',
     '/images/profile/pc-dark.jpg',
+    '/images/projects/stock_board/stock_card.jpg',
+    '/images/projects/food_lables/kefir.jpg',
+    '/images/projects/food_lables/sausage.jpg',
+    '/images/projects/journey/journey_cover.jpg',
+    '/images/projects/one-world/oneworld_cover.jpg',
+    '/images/projects/synovis/synovis_cover.jpg',
+    '/images/projects/myPortfolio/mysite_cover.jpg'
   ]
 };
 

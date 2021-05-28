@@ -120,12 +120,12 @@ function Landing(props) {
             </section>
           </div>
         </div>
-        <Hidden mdDown>
+        {/* <Hidden mdDown>
           <Notification />
         </Hidden>
         <Hidden smDown>
           <PageNav />
-        </Hidden>
+        </Hidden> */}
       </div>
     </React.Fragment>
   );

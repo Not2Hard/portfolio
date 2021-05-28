@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Head from 'next/head';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from '../components/Header';
-import GallerySmall from '../components/Gallery/GallerySmall'
+import Gallery from '../components/Gallery/Gallery'
 import brand from '../public/text/brand';
 import { withTranslation } from '../i18n';
 import NVmartial from '../projects/projecksWP/NVmartial'
@@ -31,6 +31,11 @@ const useStyles = makeStyles(theme => ({
     backgroundImage: `linear-gradient(120deg, ${theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.main}, ${theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main})`,
     padding: theme.spacing(10, 0),
     
+    },
+    img4decCaption: {
+      textAlign: 'center',
+      color: '#efefef',
+      fontStyle: 'italic',
     },
   containerWrap: {
     marginTop: theme.spacing(4),
@@ -64,6 +69,7 @@ function NVMAapp(props) {
           <section className={clsx(classes.spaceTop, classes.spaceBottom)}>
             <Typography variant="h2" align="center" gutterBottom>
               New Vision Martial Arts
+              <div className={classes.img4decCaption}>Journey with the Massiah screenshot </div><br/>
             </Typography> 
             
           </section>
@@ -73,11 +79,12 @@ function NVMAapp(props) {
             <div className={classes.blueWrap}>
               <Container>
               <img src="/images/projects/nv-ma/nv-web.jpg" alt="tap and fork" align="center" width="100%"/><br/><br/>
+              <div className={classes.img4decCaption}>Journey with the Massiah screenshot </div><br/>
               </Container>
               </div>  
          
           
-          <GallerySmall/>
+          <Gallery/>
         
         {/* <Notification /> */}
       </div>

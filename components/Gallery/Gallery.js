@@ -21,6 +21,13 @@ const portfolio = [
     category: 'ux'
   },
   {
+    img: imgAPI.profile[7],
+    title: 'New Vision Martial Art',
+    link: 'nv_martialarts',
+    size: 'short',
+    category: 'WordPress'
+  },
+  {
     img: imgAPI.profile[5],
     title: 'AWS account overview app',
     link: 'aws_map',
@@ -28,16 +35,22 @@ const portfolio = [
     category: 'ux'
   },
   {
-    img: imgAPI.profile[6],
-    title: 'Refugee kitchen',
-    link: 'refkitchen',
+    img: imgAPI.profile[16],
+    title: 'Synovis micro website',
+    link: 'synovis',
     size: 'short',
-    category: 'ux'
+    category: 'JavaScript'
   },
   {
-    img: imgAPI.profile[7],
-    title: 'New Vision Martial Art',
-    link: 'nv_martialarts',
+    img: imgAPI.profile[12],
+    title: 'Kefir label design',
+    link: 'kefir',
+    size: 'short',
+    category: 'Graphic design'
+  },{
+    img: imgAPI.profile[15],
+    title: 'One World website',
+    link: 'one-world',
     size: 'short',
     category: 'WordPress'
   },
@@ -56,6 +69,13 @@ const portfolio = [
     category: 'JavaScript'
   },
   {
+    img: imgAPI.profile[14],
+    title: 'Journey with the Messiah website',
+    link: 'journey',
+    size: 'short',
+    category: 'WordPress'
+  },
+  {
     img: imgAPI.profile[9],
     title: 'Memory Game',
     link: 'memory_game',
@@ -63,18 +83,32 @@ const portfolio = [
     category: 'JavaScript'
   },
   {
-    img: imgAPI.profile[5],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    img: imgAPI.profile[6],
+    title: 'Refugee kitchen',
+    link: 'refkitchen',
     size: 'short',
-    category: 'cat2'
+    category: 'ux'
   },
   {
-    img: imgAPI.profile[4],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
+    img: imgAPI.profile[11],
+    title: 'Stock Board',
+    link: 'stock_board',
+    size: 'short',
+    category: 'JavaScript'
+  },
+  {
+    img: imgAPI.profile[17],
+    title: 'My portfolio website',
+    link: 'myPortfolio',
+    size: 'short',
+    category: 'JavaScript'
+  },
+  {
+    img: imgAPI.profile[13],
+    title: 'Sausage label design',
+    link: 'salami',
     size: 'long',
-    category: 'cat2'
+    category: 'Graphic design'
   },
 ];
 
@@ -123,33 +157,27 @@ function Gallery(props) {
           </strong>
         </Title>
         <div className={classes.filter}>
-          <Button
+        <Button
             onClick={() => filterChildren('all')}
             className={filter === 'all' ? classes.selected : ''}
           >
             All
           </Button>
           <Button
-            onClick={() => filterChildren('cat1')}
-            className={filter === 'cat1' ? classes.selected : ''}
+            onClick={() => filterChildren('Graphic design')}
+            className={filter === 'v' ? classes.selected : ''}
           >
-            Category 1
+           Graphic design
           </Button>
           <Button
-            onClick={() => filterChildren('cat2')}
-            className={filter === 'cat2' ? classes.selected : ''}
+            onClick={() => filterChildren('JavaScript')}
+            className={filter === 'JavaScript' ? classes.selected : ''}
           >
-            Category 2
-          </Button>
-          <Button
-            onClick={() => filterChildren('cat3')}
-            className={filter === 'cat3' ? classes.selected : ''}
-          >
-            Category 3
+            JavaScript
           </Button>
           <Button
             onClick={() => filterChildren('WordPress')}
-            className={filter === 'cat4' ? classes.selected : ''}
+            className={filter === 'WordPress' ? classes.selected : ''}
           >
             WordPress
           </Button>
@@ -180,7 +208,23 @@ function Gallery(props) {
           {data.length < 1 && <Typography variant="button" component="p" align="center">{t('common:profile-landing.gallery_nodata')}</Typography>}
         </Hidden>
         <Hidden smUp>
-          <Carousel {...settings}>
+        <div className={classes.massonry}>
+            {data.map((item, index) => (
+              <div
+                className={clsx(classes.item, isLoaded && classes.loaded)}
+                key={index.toString()}
+                style={{ transitionDuration: index / 4 + 's' }}
+              >
+                <ImageThumbCard
+                  img={item.img}
+                  title={item.title}
+                  link={item.link}
+                  size={item.size}
+                />
+              </div>
+            ))}
+          </div>
+          {/* <Carousel {...settings}>
             {data.map((item, index) => (
               <div
                 className={classes.itemCarousel}
@@ -194,7 +238,7 @@ function Gallery(props) {
                 />
               </div>
             ))}
-          </Carousel>
+          </Carousel> */}
         </Hidden>
       </Container>
     </div>

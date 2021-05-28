@@ -17,27 +17,6 @@ const portfolio = [
     img: imgAPI.profile[4],
     title: 'Tap & Fork app',
     link: 'tap_and_fork',
-    size: 'long',
-    category: 'ux'
-  },
-  {
-    img: imgAPI.profile[3],
-    title: 'Tap & Fork ad editor',
-    link: 't&f_editor',
-    size: 'short',
-    category: 'ux'
-  },
-  {
-    img: imgAPI.profile[5],
-    title: 'AWS account overview app',
-    link: 'aws_map',
-    size: 'short',
-    category: 'ux'
-  },
-  {
-    img: imgAPI.profile[6],
-    title: 'Refugee kitchen',
-    link: 'refkitchen',
     size: 'short',
     category: 'ux'
   },
@@ -49,11 +28,52 @@ const portfolio = [
     category: 'WordPress'
   },
   {
+    img: imgAPI.profile[5],
+    title: 'AWS account overview app',
+    link: 'aws_map',
+    size: 'short',
+    category: 'ux'
+  },
+  {
+    img: imgAPI.profile[16],
+    title: 'Synovis micro website',
+    link: 'one-world',
+    size: 'short',
+    category: 'JavaScript'
+  },
+  {
+    img: imgAPI.profile[12],
+    title: 'Kefir label design',
+    link: 'kefir',
+    size: 'short',
+    category: 'Graphic design'
+  },{
+    img: imgAPI.profile[15],
+    title: 'One World website',
+    link: 'one-world',
+    size: 'short',
+    category: 'WordPress'
+  },
+  {
+    img: imgAPI.profile[3],
+    title: 'Tap & Fork ad editor',
+    link: 't&f_editor',
+    size: 'short',
+    category: 'ux'
+  },
+  {
     img: imgAPI.profile[8],
     title: 'Dao',
     link: 'dao',
     size: 'short',
     category: 'JavaScript'
+  },
+  {
+    img: imgAPI.profile[14],
+    title: 'Journey with the Messiah website',
+    link: 'journey',
+    size: 'short',
+    category: 'WordPress'
   },
   {
     img: imgAPI.profile[9],
@@ -63,18 +83,32 @@ const portfolio = [
     category: 'JavaScript'
   },
   {
-    img: imgAPI.profile[5],
-    title: 'stock_board',
+    img: imgAPI.profile[6],
+    title: 'Refugee kitchen',
+    link: 'refkitchen',
+    size: 'short',
+    category: 'ux'
+  },
+  {
+    img: imgAPI.profile[11],
+    title: 'Stock Board',
     link: 'stock_board',
     size: 'short',
     category: 'JavaScript'
   },
   {
-    img: imgAPI.profile[4],
-    title: 'Aenean facilisis vitae purus',
-    link: 'linkofthisitem.com',
-    size: 'long',
-    category: 'cat2'
+    img: imgAPI.profile[17],
+    title: 'One World website',
+    link: 'one-world',
+    size: 'short',
+    category: 'JavaScript'
+  },
+  {
+    img: imgAPI.profile[13],
+    title: 'Sausage label design',
+    link: 'salami',
+    size: 'short',
+    category: 'Graphic design'
   },
 ];
 
@@ -136,10 +170,10 @@ function GallerySmall(props) {
             Category 1
           </Button>
           <Button
-            onClick={() => filterChildren('cat2')}
-            className={filter === 'cat2' ? classes.selected : ''}
+            onClick={() => filterChildren('Graphic design')}
+            className={filter === 'v' ? classes.selected : ''}
           >
-            Category 2
+           Graphic design
           </Button>
           <Button
             onClick={() => filterChildren('JavaScript')}
@@ -180,7 +214,23 @@ function GallerySmall(props) {
           {data.length < 1 && <Typography variant="button" component="p" align="center">{t('common:profile-landing.gallery_nodata')}</Typography>}
         </Hidden>
         <Hidden smUp>
-          <Carousel {...settings}>
+          <div className={classes.massonry}>
+              {data.map((item, index) => (
+                <div
+                  className={clsx(classes.item, isLoaded && classes.loaded)}
+                  key={index.toString()}
+                  style={{ transitionDuration: index / 4 + 's' }}
+                >
+                  <ImageThumbCard
+                    img={item.img}
+                    title={item.title}
+                    link={item.link}
+                    size='short'
+                  />
+                </div>
+              ))}
+            </div>
+          {/* <Carousel {...settings}>
             {data.map((item, index) => (
               <div
                 className={classes.itemCarousel}
@@ -194,7 +244,7 @@ function GallerySmall(props) {
                 />
               </div>
             ))}
-          </Carousel>
+          </Carousel> */}
         </Hidden>
       </Container>
     </div>

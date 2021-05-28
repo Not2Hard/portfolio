@@ -91,6 +91,10 @@ const wpStyles = makeStyles(theme => ({
   },
   spaceTop: {
     paddingTop: sectionMargin(theme.spacing())
+  },
+  websiteLink: {
+    textTransform: 'none',
+    fontSize: 20,
   }
 }));
 

@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Head from 'next/head';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from '../components/Header';
-import GallerySmall from '../components/Gallery/GallerySmall'
+import Gallery from '../components/Gallery/Gallery'
 import Notification from '../components/Notification';
 import brand from '../public/text/brand';
 import { withTranslation } from '../i18n';
@@ -81,7 +81,7 @@ function TFapp(props) {
               </Container>
               </div>  
           </section>
-          <GallerySmall/>
+          <Gallery/>
         {/* <Notification /> */}
       </div>
     </React.Fragment>

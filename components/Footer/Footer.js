@@ -8,11 +8,11 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import Divider from '@material-ui/core/Divider';
 import { withTranslation } from '~/i18n';
-import logo from '~/public/images/profile-logo.svg';
 import brand from '~/public/text/brand';
 import { useText } from '~/theme/common';
 import useStyles from './footer-style';
 import ContactForm from '../Contact/Form';
+import Link from '@material-ui/core/Link';
 
 function Footer(props) {
   const classes = useStyles();
@@ -28,7 +28,7 @@ function Footer(props) {
         <Grid container spacing={6} direction={isMobile ? 'column-reverse' : 'row'}>
           <Grid item xs={12} md={5}>
             <div className={classes.logo}>
-              <img src={logo} alt="logo" />
+              <img src="/images/profile-logo.svg" alt="logo" />
               <Typography variant="h3" className={text.title}>
                 {brand.profile.name}
               </Typography>
@@ -37,20 +37,23 @@ function Footer(props) {
               </Typography>
             </div>
             <div className={classes.socmed}>
+            <Link href="https://www.facebook.com/natalia.sergeeva.522" target="_blank">
               <IconButton aria-label="Delete" className={classes.margin} size="small">
                 <i className="ion-social-facebook" />
-              </IconButton>
-              <IconButton aria-label="Delete" className={classes.margin} size="small">
+              </IconButton></Link>
+              {/* <IconButton aria-label="Delete" className={classes.margin} size="small">
                 <i className="ion-social-instagram" />
               </IconButton>
               <IconButton aria-label="Delete" className={classes.margin} size="small">
                 <i className="ion-social-twitter" />
-              </IconButton>
+              </IconButton> */}
+              <Link href="https://www.linkedin.com/in/natalia-sergeeva-08118b2b/" target="_blank">
               <IconButton aria-label="Delete" className={classes.margin} size="small">
                 <i className="ion-social-linkedin" />
               </IconButton>
+              </Link>
             </div>
-            <div className={classes.contact}>
+            {/* <div className={classes.contact}>
               <Typography className={text.paragraph}>
                 {t('common:profile-landing.footer_contact')}
                 <br />
@@ -62,7 +65,7 @@ function Footer(props) {
                 <br />
                 jenadoe.skype
               </Typography>
-            </div>
+            </div> */}
           </Grid>
           <Grid item xs={12} md={7}>
             <ContactForm />

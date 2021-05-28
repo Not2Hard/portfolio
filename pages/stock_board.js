@@ -6,12 +6,12 @@ import Typography from '@material-ui/core/Typography';
 import Head from 'next/head';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from '../components/Header';
-import GallerySmall from '../components/Gallery/GallerySmall'
+import Gallery from '../components/Gallery/Gallery'
 import brand from '../public/text/brand';
 import { withTranslation } from '../i18n';
 import { useText } from '~/theme/common';
 import Container from '@material-ui/core/Container';
-import StockApp from '../projects/projectsJS/stockBoard/StockApp';
+import StockFrame from '../projects/projectsJS/stockBoard/StockFrame'
 
 
 
@@ -33,6 +33,11 @@ const useStyles = makeStyles(theme => ({
     backgroundImage: `linear-gradient(120deg, ${theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.main}, ${theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main})`,
     padding: 80,
     
+    },
+    img4decCaption: {
+      textAlign: 'center',
+      color: '#efefef',
+      fontStyle: 'italic',
     },
   containerWrap: {
     marginTop: theme.spacing(4),
@@ -64,11 +69,12 @@ function StockBoard(props) {
         />
          <section>
             <div className={classes.blueWrap}>     
-              <StockApp />
+              <StockFrame  source="http://mindover.cloud.s3-website.us-east-2.amazonaws.com/"/>
               </div>  
           </section>
          
         <main className={classes.containerWrap}>
+         
           <section className={clsx(classes.spaceTop, classes.spaceBottom)}>
             <Typography variant="h2" align="center" gutterBottom>
             Stock Board
@@ -80,6 +86,7 @@ function StockBoard(props) {
           <Typography variant="h6" align="left" >
             Project Description:
           </Typography>
+          <a href="http://mindover.cloud.s3-website.us-east-2.amazonaws.com/">CLICK HERE...</a>
         
           <Typography className={text.paragraph}>
           This is a small personal project. My daughter likes to play memory game.  <br/>
@@ -99,13 +106,14 @@ function StockBoard(props) {
           </main>
           <section>
             <div className={classes.blueWrap}>
-              <Container>
-                <div>HELLO</div>              
-              </Container>
-              </div>  
+              <img src="/images/projects/stock_board/stock_board.jpg" alt="tap and fork" align="center" width="100%" /><br/>
+              <div className={classes.img4decCaption}>Stock Board screenshot </div><br/>
+            </div>  
+            
           </section>
           
-          <GallerySmall/>
+          <Gallery/>
+          
       </div>
     </React.Fragment>
   );

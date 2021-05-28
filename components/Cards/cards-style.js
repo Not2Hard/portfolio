@@ -50,9 +50,10 @@ const cardsStyles = makeStyles(theme => ({
   more: {
     position: 'absolute',
     bottom: -90,
+    left:0,
     width: '100%',
     padding: theme.spacing(3),
-    left: 0,
+    marginLeft: -15,
     height: 200,
     transition: 'all 0.3s ease-out',
     display: 'flex',

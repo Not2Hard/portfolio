@@ -14,30 +14,30 @@ import useStyle from './services-style';
 
 const services = [
   {
-    icon: 'ion-ios-color-wand',
-    name: 'UI Interface Design',
-    desc: 'Pellentesque ac  vel blandit nulla.'
+    icon: 'ion-android-laptop',
+    name: 'UI Design',
+    desc: 'User centured and clean.'
   },
   {
-    icon: 'ion-social-dribbble-outline',
-    name: 'Icon Design',
-    desc: 'Pellentesque ac  vel blandit nulla.'
+    icon: 'ion-code-working',
+    name: 'UI development',
+    desc: 'Good coding style. Attention to detailes.'
   },
   {
-    icon: 'ion-ios-world-outline',
-    name: 'HTML Prototyping',
-    desc: 'Pellentesque ac  vel blandit nulla.'
+    icon: 'ion-social-wordpress-outline',
+    name: 'WordPress development',
+    desc: 'Modern websites with easy to manage content. '
   },
   {
-    icon: 'ion-ios-camera-outline',
-    name: 'Photo Editing',
-    desc: 'Pellentesque ac  vel blandit nulla.'
+    icon: 'ion-android-color-palette',
+    name: 'Graphic Design',
+    desc: 'Picture is worth a thousand words.'
   },
   {
-    icon: 'ion-ios-snowy',
-    name: 'Graphic Illustrations',
-    desc: 'Pellentesque ac  vel blandit nulla.'
-  }
+    icon: 'ion-android-locate',
+    name: 'SEO',
+    desc: 'Be found on google and apple maps.'
+  },
   
 ];
 

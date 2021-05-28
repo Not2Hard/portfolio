@@ -29,13 +29,15 @@ export default function ImageThumb(props) {
   };
   return (
     <Paper className={clsx(classes.imgThumb, setSize(size))}>
+      <Link href={link}>
       <div className={classes.figure}>
         <div className={classes.img} style={{ backgroundImage: `url(${img})` }} />
       </div>
       <div className={classes.detail}>
         <Typography variant="h6" className={text.subtitle}>{title}</Typography>
-        <Link href={link}>{link}</Link>
+        {/* <Link href={link}>{link}</Link> */}
       </div>
+      </Link>
     </Paper>
   );
 }
