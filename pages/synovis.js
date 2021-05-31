@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
   },
   img4decCaption: {
     textAlign: 'center',
-    color: '#efefef',
+    color: '#aaaaaa',
     fontStyle: 'italic',
   }
 }));
@@ -99,6 +99,11 @@ function NVMAapp(props) {
           <Typography className={text.paragraph}>
          Amazon S3 bucket is a public cloud storage resource.I use it for hosting a staging version of the website. When it is tested and approved. I send the sourse files to Baxter IT team.  
           </Typography>
+          <Typography className={text.paragraph}>
+          One of the most importan part of the website is representatives information. It is implemented by using a svg map by <a href='https://jvectormap.com/' target="_blank">jVectorMap</a>. 
+          </Typography>
+          <img src="/images/projects/synovis/synovis_map.jpg" align="center" width="100%" alt="Synovis representatives map" className={classes.img4dec}/> 
+            <div className={classes.img4decCaption}>Synovis representatives map </div>
            <Typography variant="h6" align="left" color="primary">
           Result:
           </Typography>
@@ -107,7 +112,7 @@ function NVMAapp(props) {
           This is an ongoing project. Changes to representatives data are made each month. It would benefit from using a content managing system a lot. As a temporary solution it works fine from Baxter servers. The map makes it easy to find representatives all over the world.
           </Typography>
           <div align="center" width="100%">
-            <Link color="primary" className={classes.websiteLink} href="https://journeyswiththemessiah.org/" target="_blank">JourneysWithTheMessiah.org</Link>
+            <Link color="primary" className={classes.websiteLink} href="https://www.synovismicro.com/" target="_blank">SynovisMicro.com</Link>
           </div>
         </Container>
           </main>

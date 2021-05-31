@@ -11,6 +11,8 @@ import brand from '../public/text/brand';
 import { withTranslation } from '../i18n';
 import NVmartial from '../projects/projecksWP/NVmartial'
 import Container from '@material-ui/core/Container';
+import Link from '@material-ui/core/Link';
+import { useText } from '~/theme/common';
 
 
 const sectionMargin = margin => (margin * 10);
@@ -48,6 +50,7 @@ const useStyles = makeStyles(theme => ({
 
 function NVMAapp(props) {
   const classes = useStyles();
+  const text = useText();
   const { onToggleDark, onToggleDir, t } = props;
   return (
     <React.Fragment>
@@ -69,11 +72,16 @@ function NVMAapp(props) {
           <section className={clsx(classes.spaceTop, classes.spaceBottom)}>
             <Typography variant="h2" align="center" gutterBottom>
               New Vision Martial Arts
-              <div className={classes.img4decCaption}>Journey with the Massiah screenshot </div><br/>
             </Typography> 
+            <Typography variant="h5" align="center">
+            <Link color="primary" className={classes.websiteLink} href="https://nv-martialarts.com/" target="_blank">NV-MartialArts.com</Link>
+            </Typography>
             
           </section>
           <NVmartial/> 
+          <div align="center" width="100%">
+            <Link color="primary" className={classes.websiteLink} href="https://nv-martialarts.com/" target="_blank">NV-MartialArts.com</Link>
+          </div>
           </main>
           
             <div className={classes.blueWrap}>

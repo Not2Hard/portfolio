@@ -12,6 +12,7 @@ import { withTranslation } from '../i18n';
 import { useText } from '~/theme/common';
 import Container from '@material-ui/core/Container';
 import StockFrame from '../projects/projectsJS/stockBoard/StockFrame'
+import Link from '@material-ui/core/Link';
 
 
 
@@ -44,7 +45,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(4),
     '& > section': {
       position: 'relative'
-    }
+    },
   },
 }))
 
@@ -68,9 +69,9 @@ function StockBoard(props) {
           invert
         />
          <section>
-            <div className={classes.blueWrap}>     
-              <StockFrame  source="http://mindover.cloud.s3-website.us-east-2.amazonaws.com/"/>
-              </div>  
+         <img src="/images/projects/stock_board/stock_header.jpg" alt="tap and fork" align="center" width="100%" /><br/>
+             
+           
           </section>
          
         <main className={classes.containerWrap}>
@@ -79,36 +80,51 @@ function StockBoard(props) {
             <Typography variant="h2" align="center" gutterBottom>
             Stock Board
             </Typography> 
-            
+            <Typography variant="h5" align="center">
+            <Link color="primary" className={classes.websiteLink} href="http://mindover.cloud.s3-website.us-east-2.amazonaws.com/" target="_blank">Stock Board web app</Link>
+           </Typography>
           </section>
           <Container maxWidth="md" component="footer">
           
           <Typography variant="h6" align="left" >
             Project Description:
           </Typography>
-          <a href="http://mindover.cloud.s3-website.us-east-2.amazonaws.com/">CLICK HERE...</a>
-        
           <Typography className={text.paragraph}>
-          This is a small personal project. My daughter likes to play memory game.  <br/>
-          I wanted to meke a game specially for her. She likes to play with her favorite Little pet Shop.  <br/>
-          Small kids confuse dirrection of letters a lot. I used the letters that are harder for her to make her remember which way is "b", "d, "q" and "s".
+          This is a small personal project. I though it would be nice to have a board that would show all the stocks that I bought on one page.  <br/>
+          I don't have to login or save anyting. I can see what is going on in one sight.   <br/>
+          </Typography>
+          <Typography className={text.paragraph}>
+            <b>My role in this project</b> is UI developer. 
           </Typography>
           <Typography variant="h6" align="left" color="primary">
           Used technologies:
           </Typography>
           <Typography className={text.paragraph}>
-          It is a symple app build with React.js. <br/> I exersized to use class components the old fasion way.<br/>
-          No styling librery was used just plain scss from scruch. <br/>
+          <a href="https://polygon.io/" target="_blank">Polygon.io</a> is the data source for this project. To show the data in beutiful charts <a href="https://www.tradingview.com/" target="_blank">TradingView </a>charts wrere used. I used Polygon.io <a href="https://github.com/polygon-io/tradingview-adapter">TradingView Adapter</a> as an easy way to cnnect them.<br/>
           </Typography>
+          <Typography className={text.paragraph}>
+          <a href="https://github.com/sheaivey/react-axios" target="_blank">Axios Component</a> for React with child function callback was utilised in this project to render async requests. <br/>
+          </Typography>
+          <Typography className={text.paragraph}>
+          I used <a href="https://bulma.io/" target="_blank">Bulma</a> css framework for styling.<br/>
+          </Typography>
+          <Typography className={text.paragraph}>
+           <a href="https://github.com/react-grid-layout/react-grid-layout" target="_blank">React-Grid-Layout</a> is a grate way to make grid of elements that are scalable and have drug and drop functionality.<br/>
+          </Typography>
+          <Typography className={text.paragraph}>
+           <a href="https://github.com/maslianok/react-resize-detector" target="_blank">React Resize Detector</a> was used to obtaine the size of each chart and save it together with stock name and layout in lockal storege.<br/>
+          </Typography>
+              <img src="/images/projects/stock_board/stock_board.jpg" alt="tap and fork" align="center" width="100%" /><br/>
+              <div className={classes.img4decCaption}>Stock Board screenshot </div><br/>
+            
          
           </Container>
          
           </main>
           <section>
-            <div className={classes.blueWrap}>
-              <img src="/images/projects/stock_board/stock_board.jpg" alt="tap and fork" align="center" width="100%" /><br/>
-              <div className={classes.img4decCaption}>Stock Board screenshot </div><br/>
-            </div>  
+          <div className={classes.blueWrap}>     
+              <StockFrame  source="http://mindover.cloud.s3-website.us-east-2.amazonaws.com/"/>
+              </div>  
             
           </section>
           

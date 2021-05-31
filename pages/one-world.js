@@ -9,7 +9,6 @@ import Header from '../components/Header';
 import Gallery from '../components/Gallery/Gallery'
 import brand from '../public/text/brand';
 import { withTranslation } from '../i18n';
-import JourneyWP from '../projects/projecksWP/JourneyWP'
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import { useText } from '~/theme/common';
@@ -94,29 +93,17 @@ function NVMAapp(props) {
           Web technology:
           </Typography>
           <Typography className={text.paragraph}>
-          React.js is a greate tool for creating a stanning UI. It is not good for SEO. I decided to use node.js to make it better for serch engins. Next.js is a react framework that alows to create pre-rendere react websites. I upload static pages to a S3 bucket and it helps with preformance and can be mapped by serch engins. 
+          This is website is build with WordPress. It has flaxibility and easy adopteble to any content or structural changes. For this project I used new most popular website builder - Elementor. 
           </Typography>
           <Typography className={text.paragraph}>
-          There is nothing uniq in idea to have a portfolio website. I found a great themplate for a react landing page. It saved a lot of time and learned from a great master who created the template. 
-          This one is made by <a href="https://www.behance.net/ilhammeidi" target="_blank">Ilham Meidi</a>. I have purchest it form <a href="https://themeforest.net/" target="_blank">themeforest.net</a>. 
+          The fasters theme working with Elementor is Hello theme. I use a pro version so I can make popups and some other popular features.
           </Typography>
           <Typography className={text.paragraph}>
-          Microsoft Visual Studio Code is a geat IDE and has many plugins to improve codding style and productivity. It is my favoret tool.  
+          Customer was paticulaly interested in showing the representatives information on a world map. It is logical and intuetive. I used an Interactive Geo Maps plugin. 
           </Typography>
-          <Typography className={text.paragraph}>
-          I use Amazon S3 bucket for hosting my static pages and Github for version control.
-          </Typography>
-           <Typography variant="h6" align="left" color="primary">
-          Result:
-          </Typography>
-          <Typography className={text.paragraph}>
-            <ul>
-              <li>My website dosn't need to be updated with new version of WordPress.</li>
-              <li>I like how easy it is for hiering agents to see if I'm a good mach. </li>
-              <li>I got to use styled-components to keep up with the themplate. Before i used only css and scss for styling.</li>
-            </ul>
-
-          </Typography>
+          {/* <img src="/images/projects/nv-ma/nv-windows.jpg" align="center" width="100%" alt="AWS accounts map" className={classes.img4dec}/> 
+            <div className={classes.img4decCaption}>Window decals </div> */}
+          
           <div align="center" width="100%">
             <Link color="primary" className={classes.websiteLink} href="https://one-world-inc.com/" target="_blank">one-world-inc.com</Link>
           </div>
