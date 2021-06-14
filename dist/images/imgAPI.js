@@ -32,14 +32,21 @@ const imgAPI = {
     '/images/profile/tree.jpg',
     '/images/profile/NataliaSergeeva.jpg',
     '/images/profile/pc.jpg',
-    '/images/profile/ux-images/editor_tf.jpg',
-    '/images/profile/ux-images/tf-screens.jpg',
-    '/images/profile/ux-images/aws_min.jpg',
-    '/images/profile/ux-images/ref_head.jpg',
-    '/images/profile/wp-images/nv-logo1.jpg',
-    '/images/profile/js-images/dao_flip.gif',
+    '/images/projects/tapAndFork/editor_tf.jpg',
+    '/images/projects/tapAndFork/tf-screens.jpg',
+    '/images/projects/aws_map/aws_min.jpg',
+    '/images/projects/refugeeKit/ref_head.jpg',
+    '/images/projects/nv-ma/nv-logo1.jpg',
+    '/images/projects/dao/dao_flip.gif',
     '/images/projects/memoryGame/cover.jpg',
     '/images/profile/pc-dark.jpg',
+    '/images/projects/stock_board/stock_card.jpg',
+    '/images/projects/food_lables/kefir.jpg',
+    '/images/projects/food_lables/sausage.jpg',
+    '/images/projects/journey/journey_cover.jpg',
+    '/images/projects/one-world/oneworld_cover.jpg',
+    '/images/projects/synovis/synovis_cover.jpg',
+    '/images/projects/myPortfolio/mysite_cover.jpg'
   ]
 };
 

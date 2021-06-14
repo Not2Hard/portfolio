@@ -57,13 +57,13 @@ const portfolio = [
   {
     img: imgAPI.profile[3],
     title: 'Tap & Fork ad editor',
-    link: 't&f_editor',
+    link: 'tf_editor',
     size: 'long',
     category: 'ux'
   },
   {
     img: imgAPI.profile[8],
-    title: 'Dao',
+    title: 'Dao De Jing quotes',
     link: 'dao',
     size: 'short',
     category: 'JavaScript'

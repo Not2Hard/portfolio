@@ -57,7 +57,7 @@ function NVMAapp(props) {
       <Head>
         <title>
           { brand.profile.name }
-          &nbsp; - Blank page
+          &nbsp; - New Vision Martial Arts
         </title>
       </Head>
       <CssBaseline />

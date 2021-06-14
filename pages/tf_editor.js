@@ -78,7 +78,7 @@ function TFwebeditor(props) {
           </main>
           <section>
             <div className={classes.blueWrap}>
-              <Container alignItems="center">
+              <Container>
               <Grid container justify = "center">
               <img src="/images/projects/tapAndFork/editor_tf.jpg" alt="tap and fork" align="center" />
               <br/><br/>

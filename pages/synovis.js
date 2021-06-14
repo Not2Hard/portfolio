@@ -57,7 +57,7 @@ function NVMAapp(props) {
       <Head>
         <title>
           { brand.profile.name }
-          &nbsp; - Blank page
+          &nbsp; - Synovis Micro website
         </title>
       </Head>
       <CssBaseline />
@@ -85,7 +85,7 @@ function NVMAapp(props) {
           </Typography>
         
           <Typography className={text.paragraph}>
-          Synovis Micro is a trusted resource of products and suplyes for microsergeons and hospitales. They are subsidiary of Buxter. Synovis Micro nedded a new website that would work on Baxter web servers. The structure and functionality was inhereted from previews version. It had to be pure JavaScript and html and css.  
+          Synovis Micro is a trusted resource of products and supplies for micro surgeons and hospitals. They are subsidiaries of Buxter. Synovis Micro needed a new website that would work on Baxter web servers. The structure and functionality was inherited from the previous version. It had to be pure JavaScript and html and css.  
           </Typography>
           <Typography className={text.paragraph}>
             <b>My role in this project</b> is front end developer. 
@@ -94,13 +94,13 @@ function NVMAapp(props) {
           Web technology:
           </Typography>
           <Typography className={text.paragraph}>
-          This website is build on HTML. It uses only JavaScript and CSS for styling and functionality. It was created in Microsoft Visual Studio Code. 
+          This website is built on HTML. It uses only JavaScript and CSS for styling and functionality. It was created in Microsoft Visual Studio Code. 
           </Typography>
           <Typography className={text.paragraph}>
-         Amazon S3 bucket is a public cloud storage resource.I use it for hosting a staging version of the website. When it is tested and approved. I send the sourse files to Baxter IT team.  
+          Amazon S3 bucket is a public cloud storage resource.I use it for hosting a staging version of the website. When it is tested and approved. I send the source files to the Baxter IT team.
           </Typography>
           <Typography className={text.paragraph}>
-          One of the most importan part of the website is representatives information. It is implemented by using a svg map by <a href='https://jvectormap.com/' target="_blank">jVectorMap</a>. 
+          One of the most important parts of the website is representative information. It is implemented by using a svg map by <a href='https://jvectormap.com/' target="_blank">jVectorMap</a>. 
           </Typography>
           <img src="/images/projects/synovis/synovis_map.jpg" align="center" width="100%" alt="Synovis representatives map" className={classes.img4dec}/> 
             <div className={classes.img4decCaption}>Synovis representatives map </div>
@@ -109,10 +109,10 @@ function NVMAapp(props) {
           </Typography>
           <Typography className={text.paragraph}>
             <a></a>
-          This is an ongoing project. Changes to representatives data are made each month. It would benefit from using a content managing system a lot. As a temporary solution it works fine from Baxter servers. The map makes it easy to find representatives all over the world.
+            This is an ongoing project. Changes to representative data are made each month. It would benefit from using a content managing system a lot. As a temporary solution it works fine from Baxter servers. The map makes it easy to find representatives all over the world.
           </Typography>
           <div align="center" width="100%">
-            <Link color="primary" className={classes.websiteLink} href="https://www.synovismicro.com/" target="_blank">SynovisMicro.com</Link>
+            <Link color="primary" className={classes.websiteLink} href="https://www.synovismicro.com/" target="_blank">JourneysWithTheMessiah.org</Link>
           </div>
         </Container>
           </main>
@@ -127,7 +127,6 @@ function NVMAapp(props) {
           
           <Gallery/>
         
-        {/* <Notification /> */}
       </div>
     </React.Fragment>
   );

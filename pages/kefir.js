@@ -39,8 +39,14 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(4),
     '& > section': {
       position: 'relative'
-    }
+    },
+    
   },
+  img4decCaption: {
+    textAlign: 'center',
+    color: '#efefef',
+    fontStyle: 'italic',
+  }
 }));
 
 function DaoProject(props) {
@@ -52,7 +58,7 @@ function DaoProject(props) {
       <Head>
         <title>
           { brand.profile.name }
-          &nbsp; - Blank page
+          &nbsp; - Kefir Label design
         </title>
       </Head>
       <CssBaseline />
@@ -71,7 +77,7 @@ function DaoProject(props) {
         <main className={classes.containerWrap}>
           <section className={clsx(classes.spaceTop, classes.spaceBottom)}>
             <Typography variant="h2" align="center" gutterBottom>
-            DAO DE JING quotes project
+            Kefir Label Design
             </Typography> 
             
           </section>
@@ -80,18 +86,14 @@ function DaoProject(props) {
           <Typography variant="h6" align="left" >
             Project Description:
           </Typography>
-        
           <Typography className={text.paragraph}>
-          This is a small personal project. I love reading Dao de Jing. It changes my perspection on any problem.  <br/>
-          It is proven by psicologists that randomness brings more dopomine than predictable things. <br/>
-          If I doubt my desision or just need to get in tuch with something ald and wise, I take a random quote from book or my little app.
+          It was a label design project for <a href="http://www.goldstarusa.com/" target="_blank">International Gold Star, Inc</a>. Pink Cow was the name of the new line. They planned to make 6 flavors and needed them in both russian and english languages.   
           </Typography>
           <Typography variant="h6" align="left" color="primary">
           Used technologies:
           </Typography>
           <Typography className={text.paragraph}>
-          It is a symple app build with React.js. <br/> I exersized to use class components the old fasion way.<br/>
-          No styling librery was used just plain scss from scruch. <br/>
+          I used Adobe Illustrator to create and edit the design.  
           </Typography>
          
           </Container>
@@ -99,11 +101,10 @@ function DaoProject(props) {
           </main>
           <section>
             <div className={classes.blueWrap}>
-            <Container alignItems="center">
-            <img src="/images/projects/food_lables/gold.svg" alt="tap and fork" align="center" width="90%"/><br/>
-              <div className={classes.img4decCaption}>Tap & Fork web editor screenshot </div><br/>
-              <img src="/images/projects/food_lables/bordo.svg" alt="tap and fork" align="center" width="90%"/><br/>
-              <div className={classes.img4decCaption}>Tap & Fork web editor screenshot </div><br/>
+            <Container >
+            <img src="/images/projects/food_lables/kefir1-3_4.png" alt="Gold label option 1." align="center" width="100%"/><br/>
+              <img src="/images/projects/food_lables/kefir4-6.png" alt="Gold label option 2." align="center" width="100%"/><br/>
+              <div className={classes.img4decCaption}>Labels for kefir. </div><br/>
             </Container>
             </div>  
           </section>

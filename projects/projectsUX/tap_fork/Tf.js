@@ -39,7 +39,8 @@ const TapFork = () => {
         </Typography>
           <Typography className={text.paragraph}>
           To fully understand what set Tap &amp; Fork apart from its competitors, it was crucial that these competitors first be identified. Other projects with similar functionality on the market were:  <br/>
-          <ul>
+          </Typography>
+          <ul className={text.paragraph}>
               <li>Yelp</li>
               <li>OpenTable</li>
               <li>Zomato</li>
@@ -47,6 +48,8 @@ const TapFork = () => {
               <li>UberEATS</li>
             </ul>
             <br/>
+            
+          <Typography className={text.paragraph}>
             Most of these apps have too much information, and lack large, eye-catching images.<br/>
             List with a short description is practical but images and cards make the user experience more fun.
           </Typography>
@@ -61,26 +64,29 @@ const TapFork = () => {
            </Typography>
            <Typography className={text.paragraph}>
            Restaurant customers objectives:
-            <ul>
+           </Typography>
+           <ul className={text.paragraph}>
               <li>Find a restaurants of preferred type and distance</li>
               <li>Get coupons and specials</li>
               <li>Call to make reservation</li>
               <li>Directions</li>
               <li>Save for future visits</li>
             </ul>
-          </Typography>
+          
           <Typography className={text.paragraph}>
           Restaurant owners needs:
-            <ul>
+          </Typography>
+          <ul className={text.paragraph}>
               <li>Affordable branding and listings</li>
               <li>Advertising through coupons and specials</li>
               <li>Easily publish new images</li>
               <li>Control promotion time windows</li>
             </ul>
-          </Typography>
+          
           <Typography className={text.paragraph}>
             As a result we decided on this functionality list:
-            <ul>
+            </Typography>
+            <ul className={text.paragraph}>
               <li>Search for distance, cuisine type, and keywords</li>
               <li>Listing of graphic ads</li>
               <li>Call and direction buttons</li>
@@ -89,7 +95,7 @@ const TapFork = () => {
               <li>Favorites </li>
               <li>Sample placeholders and Google images for non-subscribed restaurants</li>
             </ul>
-          </Typography>
+          
           <Typography className={text.paragraph}>
            I could create user personas and coordinate ui with different scenarios of app users. A simple flowchart was created as a result:
            </Typography>
@@ -115,14 +121,13 @@ const TapFork = () => {
           <br/>
           I'm particularly proud of some contributions I made to this project:
           </Typography>
-          <Typography className={text.paragraph}>
-            <ul>
+            <ul className={text.paragraph}>
               <li>Google data is used before restaurants customize their business account </li>
               <li>Beautifull images</li>
               <li>The ability to have 4 restaurants on one mobile screen. Image size is very important for pleasant scroll and prevents users from feeling bombarded with information.</li>
             </ul>
             <br/><br/>
-          </Typography>
+          
         </Container>      
     </div>
     );

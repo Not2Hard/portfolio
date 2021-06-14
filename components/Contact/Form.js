@@ -10,6 +10,10 @@ import { withTranslation } from '~/i18n';
 import { useText } from '~/theme/common';
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
 import useStyles from './contact-style';
+import axios from 'axios'
+import ReCAPTCHA from 'react-google-recaptcha';
+
+
 
 function Form(props) {
   const classes = useStyles();
@@ -27,10 +31,28 @@ function Form(props) {
 
   const handleChange = name => event => {
     setValues({ ...values, [name]: event.target.value });
+    
   };
 
   const handleSubmit = () => {
-    setNotif(true);
+    // setNotif(true);
+    console.log("typed", { ...values })
+
+    const data = {
+      service_id: 'service_mf6kdl3',
+      template_id: 'template_ebd7ysm',
+      user_id: 'user_8zt4ZsTUHoeZ50SQr6EpE',
+      template_params: {
+          "to_name": "Natalia Sergeeva",
+          "from_name": values.name,
+          "message": values.message,
+          "user_email": values.email
+          
+      }
+    }
+    axios.post('https://api.emailjs.com/api/v1.0/email/send', data).then((res) => {
+        console.log(res)
+    }).catch((error) => console.log(error))    
   };
 
   const handleClose = () => {

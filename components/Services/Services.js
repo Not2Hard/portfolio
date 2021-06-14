@@ -26,7 +26,7 @@ const services = [
   {
     icon: 'ion-social-wordpress-outline',
     name: 'WordPress development',
-    desc: 'Modern websites with easy to manage content. '
+    desc: 'Modern websites with content management system. '
   },
   {
     icon: 'ion-android-color-palette',

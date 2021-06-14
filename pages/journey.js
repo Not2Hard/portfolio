@@ -55,7 +55,7 @@ function NVMAapp(props) {
       <Head>
         <title>
           { brand.profile.name }
-          &nbsp; - Blank page
+          &nbsp; - Journey with the Messiah website
         </title>
       </Head>
       <CssBaseline />

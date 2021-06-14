@@ -20,6 +20,8 @@ import Decoration from '../components/Parallax/Decoration';
 import Notification from '../components/Notification';
 import brand from '../public/text/brand';
 
+
+
 const sectionMargin = margin => (margin * 20);
 const useStyles = makeStyles(theme => ({
   mainWrap: {
@@ -76,6 +78,7 @@ function Landing(props) {
           { brand.profile.name }
           &nbsp; - UI/UX designer
         </title>
+       
       </Head>
       <CssBaseline />
       <section id="home" />

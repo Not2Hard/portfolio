@@ -13,6 +13,7 @@ import { withTranslation } from '~/i18n';
 import { useText } from '~/theme/common';
 import Settings from '../Settings';
 import useStyles from './banner-style';
+import Link from '@material-ui/core/Link';
 
 function BannerNav(props) {
   const theme = useTheme();
@@ -61,18 +62,23 @@ function BannerNav(props) {
                     {t('common:profile-landing.banner_desc')}
                   </Typography>
                   <div className={classes.socmed}>
+                  <Link href="https://www.facebook.com/natalia.sergeeva.522" target="_blank">
                     <IconButton aria-label="Delete" className={classes.margin} size="small">
                       <i className="ion-social-facebook" />
                     </IconButton>
-                    <IconButton aria-label="Delete" className={classes.margin} size="small">
+                    </Link>
+                    {/* <IconButton aria-label="Delete" className={classes.margin} size="small">
                       <i className="ion-social-twitter" />
                     </IconButton>
                     <IconButton aria-label="Delete" className={classes.margin} size="small">
                       <i className="ion-social-instagram" />
-                    </IconButton>
-                    <IconButton aria-label="Delete" className={classes.margin} size="small">
+                    </IconButton> */}
+                    
+                    <Link href="https://www.linkedin.com/in/natalia-sergeeva-08118b2b/" target="_blank">
+                      <IconButton aria-label="Delete" className={classes.margin} size="small">
                       <i className="ion-social-linkedin" />
-                    </IconButton>
+                      </IconButton>
+                    </Link>
                   </div>
                 </Hidden>
               </div>

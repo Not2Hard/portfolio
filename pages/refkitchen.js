@@ -73,7 +73,7 @@ function RefKitchen(props) {
       <Head>
         <title>
           { brand.profile.name }
-          &nbsp; - Blank page
+          &nbsp; -  Refugee Kitchen
         </title>
       </Head>
       <CssBaseline />

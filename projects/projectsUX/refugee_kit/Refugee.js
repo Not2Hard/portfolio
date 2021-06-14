@@ -57,7 +57,7 @@ const Refugee = () => {
                 Persona creation:
               </Typography>
               <Typography className={text.paragraph}>
-              It was a brief project. Personas help to prioritize functions and help create thoughtful user-centered design. My personas for this project were: a yang man and a woman over 50. She has a need to be useful and would like to teach classes. Yang man would like to have a reason to go out and meet other people. I made a list of their tasks and what they have to see in the app to enjoy it. Looking at personas helps to create flowchart.
+              It was a brief project. Personas help to prioritize functions and help create thoughtful user-centered design. My personas for this project were: a young man and a woman over 50. She has a need to be useful and would like to teach classes. Yang man would like to have a reason to go out and meet other people. I made a list of their tasks and what they have to see in the app to enjoy it. Looking at personas helps to create flowchart.
               </Typography>
               <Typography variant="h6" align="left" color="primary">
               Flowchart:
@@ -76,13 +76,13 @@ const Refugee = () => {
               Wireframes:
               </Typography>
               <Typography className={text.paragraph}>
-                Every funstion on the flow chart has at least one UI element for user to see. The order and different kinds where choosen by industry standarts. What make it easy for user to understand and easy for developers to create as it was all seen before. 
+              Every function on the flow chart has at least one UI element for the user to see. The order and different kinds were chosen by industry standards. What makes it easy for users to understand and easy for developers to create as it was all seen before.
               </Typography>
         </Container> 
         
         <Container maxWidth="lg" component="footer">
                    <img src="/images/projects/refugeeKit/ref_mosk.svg" align="center" width="100%" alt="Refugee Kitchen app moskup" /><br />
-                   <div className={classes.img4decCaption}>Refugee Kitchen app moskup</div>
+                   <div className={classes.img4decCaption}>Refugee Kitchen app mockup</div>
         </Container>          
                 <br/> <br/>
                

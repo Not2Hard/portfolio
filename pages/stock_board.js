@@ -58,7 +58,7 @@ function StockBoard(props) {
       <Head>
         <title>
           { brand.profile.name }
-          &nbsp; - Blank page
+          &nbsp; - Stock Board
         </title>
       </Head>
       <CssBaseline />

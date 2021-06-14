@@ -56,7 +56,7 @@ function NVMAapp(props) {
       <Head>
         <title>
           { brand.profile.name }
-          &nbsp; - Blank page
+          &nbsp; - MyPortfolio
         </title>
       </Head>
       <CssBaseline />
@@ -82,7 +82,7 @@ function NVMAapp(props) {
           </Typography>
         
           <Typography className={text.paragraph}>
-          This is my personal website. The idea was to make a website that would show my codding skills more than my WordPress skills.   
+          This is my personal website. The idea was to make a website that would show my coding skills more than my WordPress skills.   
           </Typography>
           <Typography className={text.paragraph}>
             <b>My role in this project</b> is front end developer. 
@@ -91,14 +91,13 @@ function NVMAapp(props) {
           Web technology:
           </Typography>
           <Typography className={text.paragraph}>
-          React.js is a greate tool for creating a stanning UI. It is not good for SEO. I decided to use node.js to make it better for serch engins. Next.js is a react framework that alows to create pre-rendere react websites. I upload static pages to a S3 bucket and it helps with preformance and can be mapped by serch engins. 
+          React.js is a great tool for creating a stunning UI. It is not good for SEO. I decided to use node.js to make it better for search engines. Next.js is a react framework that allows to create pre-rendered react websites. I upload static pages to a S3 bucket and it helps with performance and can be mapped by search engines. 
           </Typography>
           <Typography className={text.paragraph}>
-          There is nothing uniq in idea to have a portfolio website. I found a great themplate for a react landing page. It saved a lot of time and learned from a great master who created the template. 
-          This one is made by <a href="https://www.behance.net/ilhammeidi" target="_blank">Ilham Meidi</a>. I have purchest it form <a href="https://themeforest.net/" target="_blank">themeforest.net</a>. 
+          There is nothing uniq in the idea of having a portfolio website. I found a great template for a react landing page. It saved a lot of time and learned from a great master who created the template. This one is made by <a href="https://www.behance.net/ilhammeidi" target="_blank">Ilham Meidi</a>. I have purchased it from <a href="https://themeforest.net/" target="_blank">themeforest.net</a>.
           </Typography>
           <Typography className={text.paragraph}>
-          Microsoft Visual Studio Code is a geat IDE and has many plugins to improve codding style and productivity. It is my favoret tool.  
+          Microsoft Visual Studio Code is a great IDE and has many plugins to improve coding style and productivity. It is my favorite tool.  
           </Typography>
           <Typography className={text.paragraph}>
           I use Amazon S3 bucket for hosting my static pages and Github for version control.
@@ -106,14 +105,13 @@ function NVMAapp(props) {
            <Typography variant="h6" align="left" color="primary">
           Result:
           </Typography>
-          <Typography className={text.paragraph}>
-            <ul>
-              <li>My website dosn't need to be updated with new version of WordPress.</li>
-              <li>I like how easy it is for hiering agents to see if I'm a good mach. </li>
-              <li>I got to use styled-components to keep up with the themplate. Before i used only css and scss for styling.</li>
+          <ul className={text.paragraph}>
+              <li>My website doesn't need to be updated with a new version of WordPress.</li>
+              <li>I like how easy it is for hiring agents to see if I'm a good match. </li>
+              <li>I got to use styled-components to keep up with the template. Before I used only css and scss for styling.</li>
             </ul>
 
-          </Typography>
+         
          
         </Container>
           </main>

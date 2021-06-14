@@ -53,7 +53,7 @@ function TFapp(props) {
       <Head>
         <title>
           { brand.profile.name }
-          &nbsp; - Blank page
+          &nbsp; - Tap &amp; Fork mobile app
         </title>
       </Head>
       <CssBaseline />

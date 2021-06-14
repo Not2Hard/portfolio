@@ -12,6 +12,7 @@ import { withTranslation } from '../i18n';
 import { useText } from '~/theme/common';
 import Container from '@material-ui/core/Container';
 import MemoryApp from '../projects/projectsJS/memoryGame/memoryApp';
+import Link from '@material-ui/core/Link';
 
 
 
@@ -52,7 +53,7 @@ function MemoryGame(props) {
       <Head>
         <title>
           { brand.profile.name }
-          &nbsp; - Blank page
+          &nbsp; - Memory Game
         </title>
       </Head>
       <CssBaseline />
@@ -73,9 +74,11 @@ function MemoryGame(props) {
         <main className={classes.containerWrap}>
           <section className={clsx(classes.spaceTop, classes.spaceBottom)}>
             <Typography variant="h2" align="center" gutterBottom>
-            Memory game project
+            Memory Game
             </Typography> 
-            
+            <Typography variant="h5" align="center">
+            <Link color="primary" className={classes.websiteLink} href="http://memory.game.s3-website.us-east-2.amazonaws.com/" target="_blank">Memory game app</Link>
+            </Typography>
           </section>
           <Container maxWidth="md" component="footer">
           
@@ -84,16 +87,16 @@ function MemoryGame(props) {
           </Typography>
         
           <Typography className={text.paragraph}>
-          This is a small personal project. My daughter likes to play memory game.  <br/>
-          I wanted to meke a game specially for her. She likes to play with her favorite Little pet Shop.  <br/>
-          Small kids confuse dirrection of letters a lot. I used the letters that are harder for her to make her remember which way is "b", "d, "q" and "s".
+          This is a small personal project. My daughter likes to play memory games. <br/>
+          I wanted to make a game specially for her. She likes to play with her favorite Little pet Shop. <br/>
+          Small kids confuse the direction of letters a lot. I used the letters that are harder for her to make her remember which way is "b", "d, "q" and "s".
           </Typography>
           <Typography variant="h6" align="left" color="primary">
           Used technologies:
           </Typography>
           <Typography className={text.paragraph}>
-          It is a symple app build with React.js. <br/> I exersized to use class components the old fasion way.<br/>
-          No styling librery was used just plain scss from scruch. <br/>
+          It is a symple app built with React.js.<br/> I exercised to use class components the old fashioned way <br/>
+          No styling library was used, just plain scss from scratch. <br/>
           </Typography>
          
           </Container>

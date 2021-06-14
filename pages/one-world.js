@@ -84,7 +84,7 @@ function NVMAapp(props) {
           </Typography>
         
           <Typography className={text.paragraph}>
-          This is an international pharmaceutical distribution company. They help thire clients throughout the world gain access to urgently needed U.S. FDA medications. Website has general informaion and most impotantly contact information of area representatives. 
+          This is an international pharmaceutical distribution company. They help their clients throughout the world gain access to urgently needed U.S. FDA medications. Website has general information and most importantly contact information of area representatives.
           </Typography>
           <Typography className={text.paragraph}>
             <b>My role in this project</b> is WordPress developer. 
@@ -93,13 +93,13 @@ function NVMAapp(props) {
           Web technology:
           </Typography>
           <Typography className={text.paragraph}>
-          This is website is build with WordPress. It has flaxibility and easy adopteble to any content or structural changes. For this project I used new most popular website builder - Elementor. 
+          This is website is build with WordPress. It has flexibility and is easily adaptable to any content or structural changes. For this project I used new most popular website builder - Elementor. 
           </Typography>
           <Typography className={text.paragraph}>
-          The fasters theme working with Elementor is Hello theme. I use a pro version so I can make popups and some other popular features.
+          The fastest theme working with Elementor is the Hello theme. I use a pro version so I can make popups and some other popular features.
           </Typography>
           <Typography className={text.paragraph}>
-          Customer was paticulaly interested in showing the representatives information on a world map. It is logical and intuetive. I used an Interactive Geo Maps plugin. 
+          Customer was particularly interested in showing the representatives information on a world map. It is logical and intuitive. I used an Interactive Geo Maps plugin.
           </Typography>
           {/* <img src="/images/projects/nv-ma/nv-windows.jpg" align="center" width="100%" alt="AWS accounts map" className={classes.img4dec}/> 
             <div className={classes.img4decCaption}>Window decals </div> */}
