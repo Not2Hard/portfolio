@@ -26,7 +26,8 @@ function Form(props) {
     company: '',
     message: ''
   });
-
+  const [reCaptucheCode, setreCaptucheCode] = useState('')
+  const [sentNote, setSentNote] = useState(false)
   const [openNotif, setNotif] = useState(false);
 
   const handleChange = name => event => {
@@ -35,7 +36,7 @@ function Form(props) {
   };
 
   const handleSubmit = () => {
-    // setNotif(true);
+
     console.log("typed", { ...values })
 
     const data = {
@@ -46,18 +47,38 @@ function Form(props) {
           "to_name": "Natalia Sergeeva",
           "from_name": values.name,
           "message": values.message,
-          "user_email": values.email
+          "user_email": values.email,
+          "g-recaptcha-response": reCaptucheCode
           
       }
     }
-    axios.post('https://api.emailjs.com/api/v1.0/email/send', data).then((res) => {
-        console.log(res)
-    }).catch((error) => console.log(error))    
+    axios.post('https://api.emailjs.com/api/v1.0/email/send', data)
+    .then((res) => {
+        console.log("EMAILJS SENT", res)
+    }).catch((error) => console.log("EMAILJS ERROR",error))  
+    
+    setValues(
+      {
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        message: ''
+      }
+    )
+      setNotif(true);
   };
 
   const handleClose = () => {
     setNotif(false);
   };
+  function onReCAPTCHAChange(captchaCode) {
+    console.log("Captcha value:", captchaCode);
+    if(!captchaCode) {
+      return;
+    }
+    setreCaptucheCode(captchaCode)
+  }
 
   return (
     <div className={classes.formWrap}>
@@ -112,6 +133,10 @@ function Form(props) {
                   name="Message"
                   value={values.message}
                 />
+                 <ReCAPTCHA
+                    sitekey="6LdgPDAbAAAAANto4KTmjiOIKo7XEoA3yBp8bd_N"
+                    onChange={onReCAPTCHAChange}
+                  />
                 <div className={classes.btnArea}>
                   <Button variant="contained" type="submit" color="primary" size="large">
                     {t('common:profile-landing.form_send')}

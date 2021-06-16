@@ -21,7 +21,7 @@ const contactStyles = makeStyles(theme => ({
       borderTop: 0,
       borderRight: 0,
       position: 'absolute'
-    },
+    }
   },
   title: {
     textAlign: 'left',

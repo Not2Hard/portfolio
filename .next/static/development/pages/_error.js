@@ -4917,7 +4917,7 @@ eval("/* WEBPACK VAR INJECTION */(function(module) {\n\nvar _interopRequireDefau
 
 /***/ }),
 
-/***/ 7:
+/***/ 10:
 /*!***************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=%2FUsers%2Fnatalia%2FDevelopment%2Fportfolio%2Fpages%2F_error.js ***!
   \***************************************************************************************************************************************/
@@ -4940,4 +4940,4 @@ eval("module.exports = dll_5030f387d328e4415785;//# sourceURL=[module]\n//# sour
 
 /***/ })
 
-},[[7,"static/runtime/webpack.js"]]]);
+},[[10,"static/runtime/webpack.js"]]]);
