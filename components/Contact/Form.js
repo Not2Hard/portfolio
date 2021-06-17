@@ -12,6 +12,8 @@ import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator';
 import useStyles from './contact-style';
 import axios from 'axios'
 import ReCAPTCHA from 'react-google-recaptcha';
+import classnames from 'classnames'
+
 
 
 
@@ -28,6 +30,8 @@ function Form(props) {
   });
   const [reCaptucheCode, setreCaptucheCode] = useState('')
   const [sentNote, setSentNote] = useState(false)
+  const [showNote, setShowNote] = useState(false)
+
   const [openNotif, setNotif] = useState(false);
 
   const handleChange = name => event => {
@@ -66,7 +70,12 @@ function Form(props) {
         message: ''
       }
     )
-      setNotif(true);
+    setShowNote(true)
+    setTimeout(() => {setShowNote(false)}, 4000)
+    // setNotif(true);
+    setreCaptucheCode('')
+    grecaptcha.reset()
+
   };
 
   const handleClose = () => {
@@ -79,6 +88,7 @@ function Form(props) {
     }
     setreCaptucheCode(captchaCode)
   }
+  
 
   return (
     <div className={classes.formWrap}>
@@ -101,7 +111,14 @@ function Form(props) {
             </Typography>
           </Grid>
           <Grid item lg={7} xs={12}>
+            
             <div className={classes.form}>
+              <div className={clsx(classes.thankyouNote, {[classes.showThankyouNote]: showNote})}> 
+                <Typography variant="h5" className={text.subtitle}>
+                  Thank you, <br/>
+                  <b>your message was sent </b>
+                </Typography>
+              </div>
               <ValidatorForm
                 onSubmit={handleSubmit}
                 onError={errors => console.log(errors)}
