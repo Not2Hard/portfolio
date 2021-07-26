@@ -54,7 +54,7 @@ function Timeline(props) {
                     <ReactWOW animation="fadeInLeftShort" delay="0.2s" duration="0.3s">
                       <div>
                         <Typography variant="h3" gutterBottom className={text.subtitle2}>Web developer</Typography>
-                        <Typography gutterBottom>at Vitamin D creative</Typography>
+                        <Typography gutterBottom>Vitamin D creative</Typography>
                         <Typography className={classes.time}>2009 - Present</Typography>
                       </div>
                     </ReactWOW>
@@ -63,7 +63,7 @@ function Timeline(props) {
                     <ReactWOW animation="fadeInLeftShort" delay="0.2s" duration="0.3s">
                       <div>
                         <Typography variant="h3" gutterBottom className={text.subtitle2}>UX designer</Typography>
-                        <Typography gutterBottom>at Tap and Fork</Typography>
+                        <Typography gutterBottom>Tap and Fork</Typography>
                         <Typography className={classes.time}> 2016 - 2017</Typography>
                       </div>
                     </ReactWOW>
@@ -81,7 +81,7 @@ function Timeline(props) {
                     <ReactWOW animation="fadeInLeftShort" offset={200} delay="0.4s" duration="0.3s">
                       <div>
                         <Typography variant="h3" gutterBottom className={text.subtitle2}>Web 	&amp; graphic developer</Typography>
-                        <Typography gutterBottom>at Seals 	&amp; Stamps </Typography>
+                        <Typography gutterBottom>Seals 	&amp; Stamps </Typography>
                         <Typography className={classes.time}>2007 - 2008</Typography>
                       </div>
                     </ReactWOW>
@@ -90,7 +90,7 @@ function Timeline(props) {
                     <ReactWOW animation="fadeInLeftShort" offset={300} delay="0.5s" duration="0.3s">
                       <div>
                         <Typography variant="h3" gutterBottom className={text.subtitle2}>Web 	&amp; graphic developer</Typography>
-                        <Typography gutterBottom>at Active studio (Russia)</Typography>
+                        <Typography gutterBottom>Active studio (Russia)</Typography>
                         <Typography className={classes.time}>2002-2005</Typography>
                       </div>
                     </ReactWOW>

@@ -31,7 +31,7 @@ const services = [
   {
     icon: 'ion-android-color-palette',
     name: 'Graphic Design',
-    desc: 'Picture is worth a thousand words.'
+    desc: 'A picture is worth a thousand words.'
   },
   {
     icon: 'ion-android-locate',

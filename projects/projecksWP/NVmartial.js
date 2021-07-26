@@ -51,7 +51,7 @@ const NVmartial = () => {
           <Typography className={text.paragraph}>
           I like to start with search engine optimization. Google Ads Keyword Planner helps to see what words people use to find businesses. I made a list of the most popular keywords, found businesses that take first 2 places on each word or phrase. I made sure that I use all the winning techniques.
             <br/><br/>
-          The owner agreed to choose a name for the business considering available domain names with the best search words. It was a combination with his vision and available domains. His idea was to organize the school in an untraditional way, so he chose New Vision Martial Arts. We could purchase a great domain : nv-martialarts.com. It gave him a lot of advantages in google rating later on.
+          The owner agreed to choose a name for the business considering available domain names with the best search words. It was a combination of his vision and available domains. His idea was to organize the school in an untraditional way, so he chose New Vision Martial Arts. We could purchase a great domain : nv-martialarts.com. It gave him a lot of advantages in google rating later on.
           </Typography>
           <Typography variant="h6" align="left" color="primary">
           User research:
@@ -76,7 +76,7 @@ const NVmartial = () => {
           Branding:
           </Typography>
           <Typography className={text.paragraph}>
-          It was important to translate the personality of the teacher and his talent to work with teenagers and kids. He has a recognizable good kick so I traced a photo of his cick into the logo and added some brite non traditional details. 
+          It was important to translate the teacher’s personality and talent working with teenagers and kids. He has a recognizable kick so I traced a photo of his kick into the logo and added some bright, non-traditional details. 
           </Typography>
           <img src="/images/projects/nv-ma/nv-logo1.jpg" align="center"  alt="AWS accounts map" className={classes.img4dec} />
           <Typography className={text.paragraph}>
@@ -113,7 +113,7 @@ const NVmartial = () => {
           Result:
           </Typography>
           <Typography className={text.paragraph}>
-          This business flourishes. It opened 1 year before the pandemic and it survives all the dificalies. There are plans about remodeling the website and moving to a different location though. Nothing stands still for too long, but the owner created the school of his dream and he keeps recommending my service to others.
+          This business has flourished. It opened 1 year before the pandemic and it has survived all the difficulties. There are plans about remodeling the website and moving to a different location though. Nothing stands still for too long, but the owner created the school of his dream and he keeps recommending my service to others.
           </Typography>
         </Container>      
     </div>

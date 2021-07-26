@@ -97,7 +97,7 @@ function NVMAapp(props) {
           This website is built on HTML. It uses only JavaScript and CSS for styling and functionality. It was created in Microsoft Visual Studio Code. 
           </Typography>
           <Typography className={text.paragraph}>
-          Amazon S3 bucket is a public cloud storage resource.I use it for hosting a staging version of the website. When it is tested and approved. I send the source files to the Baxter IT team.
+          Amazon S3 bucket is a public cloud storage resource.I use it for hosting a staging version of the website. When it is tested and approved, I send the source files to the Baxter IT team.
           </Typography>
           <Typography className={text.paragraph}>
           One of the most important parts of the website is representative information. It is implemented by using a svg map by <a href='https://jvectormap.com/' target="_blank">jVectorMap</a>. 

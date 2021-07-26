@@ -106,7 +106,7 @@ function RefKitchen(props) {
               <img src="/images/projects/refugeeKit/ref_classes.svg" align="center" width="100%" alt="App on mobile" />
               </Grid>
               <Grid md={3} item>
-              <img src="images/projects/refugeeKit/ref_recipe.svg" align="center" width="100%" alt="App on mobile" />
+              <img src="/images/projects/refugeeKit/ref_recipe.svg" align="center" width="100%" alt="App on mobile" />
               </Grid>
             </Grid>
             
@@ -116,7 +116,7 @@ function RefKitchen(props) {
               <img src="/images/projects/refugeeKit/ref_class.svg" align="center" width="100%" alt="App on mobile" />
               </Grid>
               <Grid md={3} item>
-              <img src="images/projects/refugeeKit/ref_recipe.svg" align="center" width="100%" alt="App on mobile" />
+              <img src="/images/projects/refugeeKit/ref_recipe.svg" align="center" width="100%" alt="App on mobile" />
               </Grid>
               <Grid md={3} item>
               <img src="/images/projects/refugeeKit/ref_chef.svg" align="center" width="100%" alt="App on mobile" />

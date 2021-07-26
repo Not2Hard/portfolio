@@ -33,7 +33,7 @@ const JourneyWP = () => {
           Michael Belk is a successful fashion photographer. He created a beautiful series of images to share Jesus' teachings from a modern perspective.
           </Typography>
           <Typography className={text.paragraph}>
-          His books and images could be found in such big stores as Hobby Lobby. This website is the main commercial point for selling his art and other products.
+          His books and images could be found in big stores, including Hobby Lobby. This website is the main commercial point for selling his art and other products.
           </Typography>
           <Typography className={text.paragraph}>
             <b>My role in this project</b> is WordPress developer. 
@@ -51,7 +51,7 @@ const JourneyWP = () => {
           JourneysWithTheMessiah.org is an e-commerce project. WooCommerce is used for online merchants. It creates product pages, adds shopping baskets and provides the ability to accept major credit cards and manage orders. On top of WooCommerce I used a payment gateway plugin to connect the owner square account with the website. To calculate shipping expense another plugin was added. It connects the website with stamps.com account. Just for convenience a special shipping label printing plugin was added also.
           </Typography>
           <Typography className={text.paragraph}>
-          As a new part of this project the owner created a series of videos that explains the messages and to provide a deeper understanding of Jesus teaching. It was important to harvest customer emails so a free membership was offered if a user provides her email address. It was built by utilizing a Fusion Builder Membership plugin. It works great with Avada.
+          As a new part of this project, the owner created a series of videos that explains the messages and to provide a deeper understanding of Jesus' teachings. It was important to harvest customer emails so a free membership was offered if a user provides her email address. It was built by utilizing a Fusion Builder Membership plugin. It works great with Avada.
           </Typography>
           <Typography className={text.paragraph}>
           If images and ideas will inspire users and someone would like to help but don't want to make a purchase, there is a donatiotion option. It is done by using Donation For Woocommerce plugin.
@@ -65,7 +65,7 @@ const JourneyWP = () => {
           
           <Typography className={text.paragraph}>
             <a></a>
-            Michael Belk's project is expanding and finds more and more customers and supporters. He is sharing his vision and provides a unique service to christian community.
+            Michael Belk's project is expanding and finds more and more customers and supporters. He is sharing his vision and provides a unique service to the Christian community.
           </Typography>
           <div align="center" width="100%">
             <Link color="primary" className={classes.websiteLink} href="https://journeyswiththemessiah.org/" target="_blank">JourneysWithTheMessiah.org</Link>

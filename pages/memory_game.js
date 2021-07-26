@@ -88,8 +88,8 @@ function MemoryGame(props) {
         
           <Typography className={text.paragraph}>
           This is a small personal project. My daughter likes to play memory games. <br/>
-          I wanted to make a game specially for her. She likes to play with her favorite Little pet Shop. <br/>
-          Small kids confuse the direction of letters a lot. I used the letters that are harder for her to make her remember which way is "b", "d, "q" and "s".
+          I wanted to make a game especially for her. She likes to play with her Littlest Pet Shop, so I used these toys as the images. <br/>
+          Small kids confuse the direction of letters a lot. I used the letters that are harder for her to help her remember which way is "b", "d, "q" and "s" should face.
           </Typography>
           <Typography variant="h6" align="left" color="primary">
           Used technologies:

@@ -91,10 +91,10 @@ function NVMAapp(props) {
           Web technology:
           </Typography>
           <Typography className={text.paragraph}>
-          React.js is a great tool for creating a stunning UI. It is not good for SEO. I decided to use node.js to make it better for search engines. Next.js is a react framework that allows to create pre-rendered react websites. I upload static pages to a S3 bucket and it helps with performance and can be mapped by search engines. 
+          React.js is a great tool for creating a stunning UI. It is not good for SEO. I decided to use node.js to make it better for search engines. Next.js is a react framework that helps to create pre-rendered react websites. I upload static pages to a S3 bucket and it helps with performance and can be mapped by search engines. 
           </Typography>
           <Typography className={text.paragraph}>
-          There is nothing uniq in the idea of having a portfolio website. I found a great template for a react landing page. It saved a lot of time and learned from a great master who created the template. This one is made by <a href="https://www.behance.net/ilhammeidi" target="_blank">Ilham Meidi</a>. I have purchased it from <a href="https://themeforest.net/" target="_blank">themeforest.net</a>.
+          There is nothing unique in the idea of having a portfolio website. I found a great template for a react landing page. It saved a lot of time and I learned a lot from the great master who created the template. This one is made by <a href="https://www.behance.net/ilhammeidi" target="_blank">Ilham Meidi</a>. I have purchased it from <a href="https://themeforest.net/" target="_blank">themeforest.net</a>.
           </Typography>
           <Typography className={text.paragraph}>
           Microsoft Visual Studio Code is a great IDE and has many plugins to improve coding style and productivity. It is my favorite tool.  

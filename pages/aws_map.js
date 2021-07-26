@@ -103,23 +103,23 @@ function AWSmap(props) {
           <Typography variant="h6" align="left" color="primary">
           User research:
           </Typography>
-          <Typography className={text.paragraph}>This application is for aws developers. I didn't have to create personas for this project. My personal contacts are mostly developers :)
+          <Typography className={text.paragraph}>This application is for AWS developers. I didn't have to create personas for this project. My personal contacts are mostly developers :)
           </Typography>
           <Typography className={text.paragraph}>
           It seemed logical to use a spreadsheet data presentation. Many developers I know don't like spreadsheets, though.
           </Typography> 
           <Typography className={text.paragraph}>
-          Bubble charts are much more fun and help to prioritise your actions. I decided to combine bubble chart ideas with cards.
+          Bubble charts are much more fun and help to prioritise your actions. I decided to combine bubble chart with cards.
           </Typography>
           <Typography variant="h6" align="left" color="primary">
           Prototype:
           </Typography>
          
           <Typography className={text.paragraph}>
-          Every service in every region will be shown in a separate card. On the front will be information at glance. On click the card is turning and shows details. 
+          Every service in every region will be shown in a separate card. On the front will be information at glance. When clicked, the card is turned and shows more details. 
           </Typography>
           <Typography className={text.paragraph}>
-          The size of the card shows how many items are running and the title shows what servis it is. From a quick glance a user can see where the biggest bill will come from.
+          The size of the card shows how many items are running and the title shows what service it is. From a quick glance a user can see where the biggest bill will come from.
           </Typography>
           <img src="/images/projects/aws_map/map.jpg" align="center" width="100%" alt="Synovis representatives map" className={classes.img4dec}/> 
             <div className={classes.img4decCaption}>Prototype for aws services map </div>

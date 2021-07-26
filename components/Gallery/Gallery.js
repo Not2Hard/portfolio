@@ -16,97 +16,97 @@ const portfolio = [
   {
     img: imgAPI.profile[4],
     title: 'Tap & Fork app',
-    link: 'tap_and_fork',
+    link: '/tap_and_fork',
     size: 'long',
     category: 'ux'
   },
   {
     img: imgAPI.profile[7],
     title: 'New Vision Martial Art',
-    link: 'nv_martialarts',
+    link: '/nv_martialarts',
     size: 'short',
     category: 'WordPress'
   },
   {
     img: imgAPI.profile[5],
     title: 'AWS account overview app',
-    link: 'aws_map',
+    link: '/aws_map',
     size: 'short',
     category: 'ux'
   },
   {
     img: imgAPI.profile[16],
     title: 'Synovis micro website',
-    link: 'synovis',
+    link: '/synovis',
     size: 'short',
     category: 'JavaScript'
   },
   {
     img: imgAPI.profile[12],
     title: 'Kefir label design',
-    link: 'kefir',
+    link: '/kefir',
     size: 'short',
     category: 'Graphic design'
   },{
     img: imgAPI.profile[15],
     title: 'One World website',
-    link: 'one-world',
+    link: '/one-world',
     size: 'short',
     category: 'WordPress'
   },
   {
     img: imgAPI.profile[3],
     title: 'Tap & Fork ad editor',
-    link: 'tf_editor',
+    link: '/tf_editor',
     size: 'long',
     category: 'ux'
   },
   {
     img: imgAPI.profile[8],
     title: 'Dao De Jing quotes',
-    link: 'dao',
+    link: '/dao',
     size: 'short',
     category: 'JavaScript'
   },
   {
     img: imgAPI.profile[14],
     title: 'Journey with the Messiah website',
-    link: 'journey',
+    link: '/journey',
     size: 'short',
     category: 'WordPress'
   },
   {
     img: imgAPI.profile[9],
     title: 'Memory Game',
-    link: 'memory_game',
+    link: '/memory_game',
     size: 'short',
     category: 'JavaScript'
   },
   {
     img: imgAPI.profile[6],
     title: 'Refugee kitchen',
-    link: 'refkitchen',
+    link: '/refkitchen',
     size: 'short',
     category: 'ux'
   },
   {
     img: imgAPI.profile[11],
     title: 'Stock Board',
-    link: 'stock_board',
+    link: '/stock_board',
     size: 'short',
     category: 'JavaScript'
   },
   {
     img: imgAPI.profile[17],
     title: 'My portfolio website',
-    link: 'myPortfolio',
+    link: '/myPortfolio',
     size: 'short',
     category: 'JavaScript'
   },
   {
     img: imgAPI.profile[13],
     title: 'Sausage label design',
-    link: 'salami',
+    link: '/salami',
     size: 'long',
     category: 'Graphic design'
   },

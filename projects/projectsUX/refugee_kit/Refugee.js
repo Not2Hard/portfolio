@@ -39,7 +39,7 @@ const Refugee = () => {
                 Project Description:
               </Typography>
               <Typography className={text.paragraph}>
-              This startup company was created as the owner saw a need to help refugees integrate into the community. Many people feel very isolated in a new place. After working with so many refugees the owner realised that most people had a real passion for food so this series of classes was born. Briefbox.me published the request for design of a directory app. The app should include information about the person hosting the class, what dishes they’ll be teaching and another screen for information on their home country.
+              This startup company was created when the founder saw a need to help refugees integrate into their community. Many people feel very isolated in a new place. After working with so many refugees the owner realised that most people had a real passion for food so this series of classes was born. Briefbox.me published the request for design of a directory app. The app should include information about the person hosting the class, what dishes they’ll be teaching and another screen for information on their home country.
               </Typography>
               <Typography variant="h6" align="left" color="primary">
               Desk research:
@@ -57,10 +57,7 @@ const Refugee = () => {
                 Persona creation:
               </Typography>
               <Typography className={text.paragraph}>
-              It was a brief project. Personas help to prioritize functions and help create thoughtful user-centered design. My personas for this project were: a young man and a woman over 50. She has a need to be useful and would like to teach classes. Yang man would like to have a reason to go out and meet other people. I made a list of their tasks and what they have to see in the app to enjoy it. Looking at personas helps to create flowchart.
-              </Typography>
-              <Typography variant="h6" align="left" color="primary">
-              Flowchart:
+              It was a brief project. Personas help to prioritize functions and help create thoughtful user-centered design. My personas for this project were: a young man and a woman over 50. She would like to teach classes, while the yang man would like a reason to go out and meet other people. I made a list of their tasks and what they have to see in the app to enjoy it. Looking at personas helps to create flowchart:
               </Typography>
         </Container> 
         <Container maxWidth="lg" component="footer">

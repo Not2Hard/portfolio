@@ -38,7 +38,7 @@ const TapFork = () => {
           Desk research:
         </Typography>
           <Typography className={text.paragraph}>
-          To fully understand what set Tap &amp; Fork apart from its competitors, it was crucial that these competitors first be identified. Other projects with similar functionality on the market were:  <br/>
+          To fully understand what sets Tap &amp; Fork apart from its competitors, it was crucial that these competitors first be identified. Other projects with similar functionality on the market were:  <br/>
           </Typography>
           <ul className={text.paragraph}>
               <li>Yelp</li>
@@ -51,16 +51,16 @@ const TapFork = () => {
             
           <Typography className={text.paragraph}>
             Most of these apps have too much information, and lack large, eye-catching images.<br/>
-            List with a short description is practical but images and cards make the user experience more fun.
+            A list with a short description is practical but images and cards make the user experience more fun.
           </Typography>
           
           <Typography variant="h6" align="left" color="primary">
             User research:
           </Typography>
           <Typography className={text.paragraph}>
-          At the beginning of the project we ran a series of user testing trying to find out what people are looking for in such an application, and how existing applications come short. One of the biggest issues reported by users was the amount of information surfaced by most of the popular applications. The listings would show too much information to parse through. At the same time the images of restaurants in the list were too small, making it difficult to see the unique features and the spirit of each restaurant. 
+          At the beginning of the project we ran a series of user testing surveys to find out what people are looking for in such an application, and how existing applications come up short. One of the biggest issues reported by users was the overwhelming amount of information presented by most popular applications. At the same time the images of restaurants in the list were too small, making it difficult to see the unique features and the spirit of each restaurant. 
            <br/><br/>
-           Our solution to that problem was to reduce the amount of the information presented in the restaurant list focusing on the image that would show each restaurant unique features. We have received a very strong positive user feedback. A team member contacted 20 restaurant owners. It gave us a chance to see their unique needs and pain points with the existing applications. After that we could state goals and pain points for both restaurant customers and restaurant owners.
+           Our solution to that problem was to reduce the amount of information presented in the restaurant listing, instead focusing on the image that would show each restaurant's unique features. We have received very positive user feedback. A team member contacted 20 restaurant owners. It gave us a chance to see their unique needs and pain points with the existing applications. After that we could state goals and pain points for both restaurant customers and restaurant owners.
            </Typography>
            <Typography className={text.paragraph}>
            Restaurant customers objectives:
@@ -97,7 +97,7 @@ const TapFork = () => {
             </ul>
           
           <Typography className={text.paragraph}>
-           I could create user personas and coordinate ui with different scenarios of app users. A simple flowchart was created as a result:
+           I could create user personas and coordinate UI with different scenarios of app users. A simple flowchart was created as a result:
            </Typography>
            </Container> 
            <Container maxWidth="lg" component="footer">
@@ -106,7 +106,7 @@ const TapFork = () => {
           </Container> 
           <Container maxWidth="md" component="footer">
           <Typography className={text.paragraph}>
-          Search results can be displayed as a list. For the purpose of this application and for better user experience I wanted to use cards with graphics. I think it is optimal to have 4 cards per screen and make them tall. It gives an opportunity for clear header with name and stars. Images of food looked so much better and more distinguishable than in other apps.
+          Search results can be displayed as a list. For the purpose of this application and for better user experience I wanted to use cards with graphics. I think it is optimal to have 4 cards per screen and make them tall. It creates an opportunity for a clear header with the name and ratings. The images of food looked much better and more distinguishable than in other apps.
           </Typography>
           <Typography className={text.paragraph}>
           The big problem with the design was the initial state of the app. Where the images and restaurants would come from? How the app should look when it is just starting? The solution was to use google data and present images for certain types of restaurants. As a result the app was beautiful and addictive to scroll even when it just came alive.
@@ -123,8 +123,8 @@ const TapFork = () => {
           </Typography>
             <ul className={text.paragraph}>
               <li>Google data is used before restaurants customize their business account </li>
-              <li>Beautifull images</li>
-              <li>The ability to have 4 restaurants on one mobile screen. Image size is very important for pleasant scroll and prevents users from feeling bombarded with information.</li>
+              <li>Beautiful images</li>
+              <li>The ability to have 4 restaurants on one mobile screen. Image size is very important for a pleasant experience and prevents users from feeling bombarded with information.</li>
             </ul>
             <br/><br/>
           
