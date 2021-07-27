@@ -164,10 +164,10 @@ function Gallery(props) {
             All
           </Button>
           <Button
-            onClick={() => filterChildren('Graphic design')}
+            onClick={() => filterChildren('Graphics')}
             className={filter === 'v' ? classes.selected : ''}
           >
-           Graphic design
+           Graphics 
           </Button>
           <Button
             onClick={() => filterChildren('JavaScript')}

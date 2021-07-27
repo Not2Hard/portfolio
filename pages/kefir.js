@@ -87,7 +87,7 @@ function DaoProject(props) {
             Project Description:
           </Typography>
           <Typography className={text.paragraph}>
-          It was a label design project for <a href="http://www.goldstarusa.com/" target="_blank">International Gold Star, Inc</a>. Pink Cow was the name of the new line. They planned to make 6 flavors and needed them in both russian and english languages.   
+          This was a label design project for <a href="http://www.goldstarusa.com/" target="_blank">International Gold Star, Inc</a>. Pink Cow was the name of the new line. They planned to make 6 flavors and needed them in both Russian and English languages.   
           </Typography>
           <Typography variant="h6" align="left" color="primary">
           Used technologies:

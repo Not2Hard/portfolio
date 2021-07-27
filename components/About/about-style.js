@@ -54,13 +54,13 @@ const aboutStyles = makeStyles(theme => ({
   item: {
     textAlign: 'center',
     color: gold,
-    margin: theme.spacing(2),
-    [theme.breakpoints.up('md')]: {
-      margin: theme.spacing(4),
+    margin: theme.spacing(1),
+    [theme.breakpoints.up('xs')]: {
+      margin: theme.spacing(2),
     },
     [theme.breakpoints.down('xs')]: {
-      paddingLeft: theme.spacing(3),
-      paddingRight: theme.spacing(3)
+      paddingLeft: theme.spacing(1),
+      paddingRight: theme.spacing(1)
     },
     '& figure': {
       height: 70,
@@ -75,7 +75,8 @@ const aboutStyles = makeStyles(theme => ({
     '& p': {
       fontFamily: 'Times New Roman',
       [theme.breakpoints.down('sm')]: {
-        fontSize: 16
+        fontSize: 16,
+        margin: 0
       }
     },
     '& h5': {
