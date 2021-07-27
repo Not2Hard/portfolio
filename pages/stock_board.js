@@ -32,7 +32,7 @@ const useStyles = makeStyles(theme => ({
   },
   blueWrap: {
     backgroundImage: `linear-gradient(120deg, ${theme.palette.type === 'dark' ? theme.palette.secondary.dark : theme.palette.secondary.main}, ${theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main})`,
-    padding: 80,
+    padding: 20,
     
     },
     img4decCaption: {
