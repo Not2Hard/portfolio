@@ -5,9 +5,10 @@
 
 .app {
   max-width: 80rem;
-  min-width: 475px;
+  min-width: 320px;
   margin: 0 auto;
-  padding: 40px;
+  margin-top: 50px;
+  padding: 20px;
   display: flex;
   background-color: white;
   
@@ -47,6 +48,7 @@
     width: 18rem;
    
   }
+  
 
   @media (max-width:860px){
       .img-left{
@@ -66,5 +68,24 @@
       .img-right{
         display: none;
       }
+      .section {    
+        min-height: 1px;
+        min-width: 1px;
+        margin: 0;
+        header{
+          width: 18rem;
+          margin: 0 auto;
+        }
+       
+      }
+    
+      h1{
+        display: block;
+        font-size: 1.1em;
+      }
+      h3 {
+        display: block;
+        font-size: 0.8em;
+    }
     }
 }
