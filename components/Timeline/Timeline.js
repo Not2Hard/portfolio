@@ -108,7 +108,7 @@ function Timeline(props) {
                   <li>
                       <div className={classes.textIcon}>
                         <i className="ion-ios-world-outline" />
-                        <Typography variant="h6" className={text.subtitle2}>HTML & SCC </Typography>
+                        <Typography variant="h6" className={text.subtitle2}>HTML & CSS </Typography>
                       </div>
                       <LinearProgress
                         variant="determinate"

@@ -38,7 +38,8 @@ function About(props) {
                 </div>
                 <div className={classes.item}>
                   <figure>
-                    <a target="_blank" href="/Natalia_Sergeeva_UIdev.pdf"><img src="/images/profile/resume.jpg" alt="resume icon" /></a>
+                    {/* <a target="_blank" href="/Natalia_Sergeeva_UIdev.pdf"><img src="/images/profile/resume.jpg" alt="resume icon" /></a> */}
+                    <a target="_blank" href="https://s3.us-east-2.amazonaws.com/sergeeva.us/Natalia_Sergeeva_UIdev.pdf"><img src="/images/profile/resume.jpg" alt="resume icon" /></a>
                   </figure>
                   <Typography component="p">see my</Typography>
                   <Typography variant="h5" className={text.subtitle}>Resume</Typography>
