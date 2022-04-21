@@ -27,7 +27,6 @@ function About(props) {
           <Grid item lg={2} xs={12} />
           <Grid item lg={9} xs={12}>
             <div className={classes.about}>
-            
               <div className={classes.reward}>
                 <div className={classes.item}>
                   <figure>
@@ -39,7 +38,7 @@ function About(props) {
                 <div className={classes.item}>
                   <figure>
                     {/* <a target="_blank" href="/Natalia_Sergeeva_UIdev.pdf"><img src="/images/profile/resume.jpg" alt="resume icon" /></a> */}
-                    <a target="_blank" href="https://s3.us-east-2.amazonaws.com/sergeeva.us/Natalia's_Resume_novo.pdf"><img src="/images/profile/resume.jpg" alt="resume icon" /></a>
+                    <a target="_blank" href="https://s3.us-east-2.amazonaws.com/sergeeva.us/NataliaS_Resume_novo.pdf"><img src="/images/profile/resume.jpg" alt="resume icon" /></a>
                   </figure>
                   <Typography component="p">see my</Typography>
                   <Typography variant="h5" className={text.subtitle}>Resume</Typography>
