@@ -3,8 +3,8 @@ import imgAPI from '~/public/images/imgAPI';
 module.exports = {
   profile: {
     name: 'Natalia Sergeeva',
-    title: 'Front End Developer & Designer',
-    desc: 'Front End Developer & Designer profile page',
+    title: 'Front End Developer',
+    desc: 'Front End Developer profile page',
     prefix: 'Sergeeva',
     footerText: 'Natalia Sergeeva 2021',
     logoText: 'Natalia ',

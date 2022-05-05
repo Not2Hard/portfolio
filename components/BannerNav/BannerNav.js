@@ -55,12 +55,12 @@ function BannerNav(props) {
                 Hi, I'm Natalia Sergeeva,
                 </Typography>
                 <Typography variant="h4" className={text.title2}>
-                Front End Developer & Designer
+                Front End Developer
                 </Typography>
                 <Hidden smDown>
-                  <Typography variant="h5" className={text.subtitle2}>
+                  {/* <Typography variant="h5" className={text.subtitle2}>
                     {t('common:profile-landing.banner_desc')}
-                  </Typography>
+                  </Typography> */}
                   <div className={classes.socmed}>
                   <Link href="https://www.facebook.com/natalia.sergeeva.522" target="_blank">
                     <IconButton aria-label="Delete" className={classes.margin} size="small">
